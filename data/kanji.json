@@ -1,0 +1,3946 @@
+[
+  {
+    "id": 1,
+    "level": "N5",
+    "kanji": "一",
+    "meaning": "one",
+    "alts": [
+      "1",
+      "single"
+    ],
+    "compound": false
+  },
+  {
+    "id": 2,
+    "level": "N5",
+    "kanji": "二",
+    "meaning": "two",
+    "alts": [
+      "2"
+    ],
+    "compound": false
+  },
+  {
+    "id": 3,
+    "level": "N5",
+    "kanji": "三",
+    "meaning": "three",
+    "alts": [
+      "3"
+    ],
+    "compound": false
+  },
+  {
+    "id": 4,
+    "level": "N5",
+    "kanji": "四",
+    "meaning": "four",
+    "alts": [
+      "4"
+    ],
+    "compound": false
+  },
+  {
+    "id": 5,
+    "level": "N5",
+    "kanji": "五",
+    "meaning": "five",
+    "alts": [
+      "5"
+    ],
+    "compound": false
+  },
+  {
+    "id": 6,
+    "level": "N5",
+    "kanji": "六",
+    "meaning": "six",
+    "alts": [
+      "6"
+    ],
+    "compound": false
+  },
+  {
+    "id": 7,
+    "level": "N5",
+    "kanji": "七",
+    "meaning": "seven",
+    "alts": [
+      "7"
+    ],
+    "compound": false
+  },
+  {
+    "id": 8,
+    "level": "N5",
+    "kanji": "八",
+    "meaning": "eight",
+    "alts": [
+      "8"
+    ],
+    "compound": false
+  },
+  {
+    "id": 9,
+    "level": "N5",
+    "kanji": "九",
+    "meaning": "nine",
+    "alts": [
+      "9"
+    ],
+    "compound": false
+  },
+  {
+    "id": 10,
+    "level": "N5",
+    "kanji": "十",
+    "meaning": "ten",
+    "alts": [
+      "10"
+    ],
+    "compound": false
+  },
+  {
+    "id": 11,
+    "level": "N5",
+    "kanji": "百",
+    "meaning": "hundred",
+    "alts": [
+      "100"
+    ],
+    "compound": false
+  },
+  {
+    "id": 12,
+    "level": "N5",
+    "kanji": "千",
+    "meaning": "thousand",
+    "alts": [
+      "1000"
+    ],
+    "compound": false
+  },
+  {
+    "id": 13,
+    "level": "N5",
+    "kanji": "円",
+    "meaning": "yen",
+    "alts": [
+      "japanese yen"
+    ],
+    "compound": false
+  },
+  {
+    "id": 14,
+    "level": "N5",
+    "kanji": "日",
+    "meaning": "day / sun",
+    "alts": [
+      "day",
+      "sun"
+    ],
+    "compound": false
+  },
+  {
+    "id": 15,
+    "level": "N5",
+    "kanji": "月",
+    "meaning": "month / moon",
+    "alts": [
+      "month",
+      "moon"
+    ],
+    "compound": false
+  },
+  {
+    "id": 16,
+    "level": "N5",
+    "kanji": "火",
+    "meaning": "fire",
+    "alts": [
+      "tuesday",
+      "fire (element)"
+    ],
+    "compound": false
+  },
+  {
+    "id": 17,
+    "level": "N5",
+    "kanji": "水",
+    "meaning": "water",
+    "alts": [
+      "wednesday",
+      "water (element)"
+    ],
+    "compound": false
+  },
+  {
+    "id": 18,
+    "level": "N5",
+    "kanji": "木",
+    "meaning": "tree / wood",
+    "alts": [
+      "tree",
+      "wood",
+      "thursday"
+    ],
+    "compound": false
+  },
+  {
+    "id": 19,
+    "level": "N5",
+    "kanji": "金",
+    "meaning": "gold / money",
+    "alts": [
+      "gold",
+      "money",
+      "friday"
+    ],
+    "compound": false
+  },
+  {
+    "id": 20,
+    "level": "N5",
+    "kanji": "土",
+    "meaning": "earth / soil",
+    "alts": [
+      "soil",
+      "earth",
+      "saturday"
+    ],
+    "compound": false
+  },
+  {
+    "id": 21,
+    "level": "N5",
+    "kanji": "人",
+    "meaning": "person",
+    "alts": [
+      "people",
+      "human"
+    ],
+    "compound": false
+  },
+  {
+    "id": 22,
+    "level": "N5",
+    "kanji": "男",
+    "meaning": "man",
+    "alts": [
+      "male"
+    ],
+    "compound": false
+  },
+  {
+    "id": 23,
+    "level": "N5",
+    "kanji": "女",
+    "meaning": "woman",
+    "alts": [
+      "female"
+    ],
+    "compound": false
+  },
+  {
+    "id": 24,
+    "level": "N5",
+    "kanji": "子",
+    "meaning": "child",
+    "alts": [
+      "kid"
+    ],
+    "compound": false
+  },
+  {
+    "id": 25,
+    "level": "N5",
+    "kanji": "大",
+    "meaning": "big",
+    "alts": [
+      "large"
+    ],
+    "compound": false
+  },
+  {
+    "id": 26,
+    "level": "N5",
+    "kanji": "小",
+    "meaning": "small",
+    "alts": [
+      "little"
+    ],
+    "compound": false
+  },
+  {
+    "id": 27,
+    "level": "N5",
+    "kanji": "中",
+    "meaning": "middle / inside",
+    "alts": [
+      "middle",
+      "inside"
+    ],
+    "compound": false
+  },
+  {
+    "id": 28,
+    "level": "N5",
+    "kanji": "上",
+    "meaning": "up / above",
+    "alts": [
+      "up",
+      "above"
+    ],
+    "compound": false
+  },
+  {
+    "id": 29,
+    "level": "N5",
+    "kanji": "下",
+    "meaning": "down / below",
+    "alts": [
+      "down",
+      "below",
+      "under"
+    ],
+    "compound": false
+  },
+  {
+    "id": 30,
+    "level": "N5",
+    "kanji": "左",
+    "meaning": "left",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 31,
+    "level": "N5",
+    "kanji": "右",
+    "meaning": "right",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 32,
+    "level": "N5",
+    "kanji": "山",
+    "meaning": "mountain",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 33,
+    "level": "N5",
+    "kanji": "川",
+    "meaning": "river",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 34,
+    "level": "N5",
+    "kanji": "田",
+    "meaning": "rice field",
+    "alts": [
+      "field",
+      "rice paddy"
+    ],
+    "compound": false
+  },
+  {
+    "id": 35,
+    "level": "N5",
+    "kanji": "天",
+    "meaning": "heaven / sky",
+    "alts": [
+      "sky",
+      "heaven"
+    ],
+    "compound": false
+  },
+  {
+    "id": 36,
+    "level": "N5",
+    "kanji": "気",
+    "meaning": "spirit / mood",
+    "alts": [
+      "spirit",
+      "mood",
+      "air"
+    ],
+    "compound": false
+  },
+  {
+    "id": 37,
+    "level": "N5",
+    "kanji": "見",
+    "meaning": "see",
+    "alts": [
+      "look",
+      "watch"
+    ],
+    "compound": false
+  },
+  {
+    "id": 38,
+    "level": "N5",
+    "kanji": "行",
+    "meaning": "go",
+    "alts": [
+      "go / act",
+      "go (to)"
+    ],
+    "compound": false
+  },
+  {
+    "id": 39,
+    "level": "N5",
+    "kanji": "来",
+    "meaning": "come",
+    "alts": [
+      "come (to)"
+    ],
+    "compound": false
+  },
+  {
+    "id": 40,
+    "level": "N5",
+    "kanji": "食",
+    "meaning": "eat",
+    "alts": [
+      "food",
+      "eat / food"
+    ],
+    "compound": false
+  },
+  {
+    "id": 41,
+    "level": "N5",
+    "kanji": "飲",
+    "meaning": "drink",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 42,
+    "level": "N5",
+    "kanji": "話",
+    "meaning": "talk / speak",
+    "alts": [
+      "speak",
+      "talk"
+    ],
+    "compound": false
+  },
+  {
+    "id": 43,
+    "level": "N5",
+    "kanji": "読",
+    "meaning": "read",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 44,
+    "level": "N5",
+    "kanji": "書",
+    "meaning": "write",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 45,
+    "level": "N5",
+    "kanji": "聞",
+    "meaning": "listen / hear",
+    "alts": [
+      "hear",
+      "listen"
+    ],
+    "compound": false
+  },
+  {
+    "id": 46,
+    "level": "N5",
+    "kanji": "買",
+    "meaning": "buy",
+    "alts": [
+      "purchase"
+    ],
+    "compound": false
+  },
+  {
+    "id": 47,
+    "level": "N5",
+    "kanji": "休",
+    "meaning": "rest",
+    "alts": [
+      "holiday",
+      "break"
+    ],
+    "compound": false
+  },
+  {
+    "id": 48,
+    "level": "N5",
+    "kanji": "生",
+    "meaning": "life / birth",
+    "alts": [
+      "life",
+      "birth",
+      "raw",
+      "live"
+    ],
+    "compound": false
+  },
+  {
+    "id": 49,
+    "level": "N5",
+    "kanji": "学",
+    "meaning": "study",
+    "alts": [
+      "learning"
+    ],
+    "compound": false
+  },
+  {
+    "id": 50,
+    "level": "N5",
+    "kanji": "校",
+    "meaning": "school",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 51,
+    "level": "N5",
+    "kanji": "先",
+    "meaning": "previous / ahead",
+    "alts": [
+      "previous",
+      "ahead"
+    ],
+    "compound": false
+  },
+  {
+    "id": 52,
+    "level": "N5",
+    "kanji": "友",
+    "meaning": "friend",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 53,
+    "level": "N5",
+    "kanji": "名",
+    "meaning": "name",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 54,
+    "level": "N5",
+    "kanji": "本",
+    "meaning": "book",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 55,
+    "level": "N5",
+    "kanji": "何",
+    "meaning": "what",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 56,
+    "level": "N5",
+    "kanji": "時",
+    "meaning": "time / hour",
+    "alts": [
+      "time",
+      "hour"
+    ],
+    "compound": false
+  },
+  {
+    "id": 57,
+    "level": "N5",
+    "kanji": "分",
+    "meaning": "minute / understand",
+    "alts": [
+      "minute",
+      "understand",
+      "part"
+    ],
+    "compound": false
+  },
+  {
+    "id": 58,
+    "level": "N5",
+    "kanji": "今",
+    "meaning": "now",
+    "alts": [
+      "current"
+    ],
+    "compound": false
+  },
+  {
+    "id": 59,
+    "level": "N5",
+    "kanji": "週",
+    "meaning": "week",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 60,
+    "level": "N5",
+    "kanji": "年",
+    "meaning": "year",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 61,
+    "level": "N5",
+    "kanji": "語",
+    "meaning": "language",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 62,
+    "level": "N5",
+    "kanji": "車",
+    "meaning": "car",
+    "alts": [
+      "vehicle"
+    ],
+    "compound": false
+  },
+  {
+    "id": 63,
+    "level": "N5",
+    "kanji": "駅",
+    "meaning": "station",
+    "alts": [
+      "train station"
+    ],
+    "compound": false
+  },
+  {
+    "id": 64,
+    "level": "N5",
+    "kanji": "電",
+    "meaning": "electricity",
+    "alts": [
+      "electric"
+    ],
+    "compound": false
+  },
+  {
+    "id": 65,
+    "level": "N5",
+    "kanji": "雨",
+    "meaning": "rain",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 66,
+    "level": "N5",
+    "kanji": "白",
+    "meaning": "white",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 67,
+    "level": "N5",
+    "kanji": "黒",
+    "meaning": "black",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 68,
+    "level": "N5",
+    "kanji": "赤",
+    "meaning": "red",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 69,
+    "level": "N5",
+    "kanji": "青",
+    "meaning": "blue",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 70,
+    "level": "N5",
+    "kanji": "学生",
+    "meaning": "student",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 71,
+    "level": "N5",
+    "kanji": "先生",
+    "meaning": "teacher",
+    "alts": [
+      "instructor"
+    ],
+    "compound": true
+  },
+  {
+    "id": 72,
+    "level": "N5",
+    "kanji": "日本",
+    "meaning": "Japan",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 73,
+    "level": "N5",
+    "kanji": "日本人",
+    "meaning": "Japanese person",
+    "alts": [
+      "Japanese (person)"
+    ],
+    "compound": true
+  },
+  {
+    "id": 74,
+    "level": "N5",
+    "kanji": "外国",
+    "meaning": "foreign country",
+    "alts": [
+      "abroad",
+      "foreign"
+    ],
+    "compound": true
+  },
+  {
+    "id": 75,
+    "level": "N5",
+    "kanji": "外国人",
+    "meaning": "foreigner",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 76,
+    "level": "N5",
+    "kanji": "大学",
+    "meaning": "university",
+    "alts": [
+      "college"
+    ],
+    "compound": true
+  },
+  {
+    "id": 77,
+    "level": "N5",
+    "kanji": "高校",
+    "meaning": "high school",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 78,
+    "level": "N5",
+    "kanji": "中学",
+    "meaning": "middle school",
+    "alts": [
+      "junior high"
+    ],
+    "compound": true
+  },
+  {
+    "id": 79,
+    "level": "N5",
+    "kanji": "本日",
+    "meaning": "today",
+    "alts": [
+      "today (formal)"
+    ],
+    "compound": true
+  },
+  {
+    "id": 80,
+    "level": "N5",
+    "kanji": "今日",
+    "meaning": "today",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 81,
+    "level": "N5",
+    "kanji": "今週",
+    "meaning": "this week",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 82,
+    "level": "N5",
+    "kanji": "来週",
+    "meaning": "next week",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 83,
+    "level": "N5",
+    "kanji": "去年",
+    "meaning": "last year",
+    "alts": [
+      "previous year"
+    ],
+    "compound": true
+  },
+  {
+    "id": 84,
+    "level": "N5",
+    "kanji": "今年",
+    "meaning": "this year",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 85,
+    "level": "N5",
+    "kanji": "来年",
+    "meaning": "next year",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 86,
+    "level": "N5",
+    "kanji": "電車",
+    "meaning": "train",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 87,
+    "level": "N5",
+    "kanji": "入口",
+    "meaning": "entrance",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 88,
+    "level": "N5",
+    "kanji": "出口",
+    "meaning": "exit",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 89,
+    "level": "N5",
+    "kanji": "右手",
+    "meaning": "right hand",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 90,
+    "level": "N5",
+    "kanji": "左手",
+    "meaning": "left hand",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 91,
+    "level": "N4",
+    "kanji": "新",
+    "meaning": "new",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 92,
+    "level": "N4",
+    "kanji": "古",
+    "meaning": "old",
+    "alts": [
+      "ancient"
+    ],
+    "compound": false
+  },
+  {
+    "id": 93,
+    "level": "N4",
+    "kanji": "長",
+    "meaning": "long / leader",
+    "alts": [
+      "long",
+      "chief",
+      "leader"
+    ],
+    "compound": false
+  },
+  {
+    "id": 94,
+    "level": "N4",
+    "kanji": "短",
+    "meaning": "short",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 95,
+    "level": "N4",
+    "kanji": "多",
+    "meaning": "many",
+    "alts": [
+      "much"
+    ],
+    "compound": false
+  },
+  {
+    "id": 96,
+    "level": "N4",
+    "kanji": "少",
+    "meaning": "few / little",
+    "alts": [
+      "few",
+      "little"
+    ],
+    "compound": false
+  },
+  {
+    "id": 97,
+    "level": "N4",
+    "kanji": "早",
+    "meaning": "early",
+    "alts": [
+      "fast",
+      "early / fast"
+    ],
+    "compound": false
+  },
+  {
+    "id": 98,
+    "level": "N4",
+    "kanji": "遅",
+    "meaning": "late / slow",
+    "alts": [
+      "late",
+      "slow"
+    ],
+    "compound": false
+  },
+  {
+    "id": 99,
+    "level": "N4",
+    "kanji": "近",
+    "meaning": "near",
+    "alts": [
+      "close"
+    ],
+    "compound": false
+  },
+  {
+    "id": 100,
+    "level": "N4",
+    "kanji": "遠",
+    "meaning": "far",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 101,
+    "level": "N4",
+    "kanji": "高",
+    "meaning": "tall / expensive",
+    "alts": [
+      "high",
+      "tall",
+      "expensive"
+    ],
+    "compound": false
+  },
+  {
+    "id": 102,
+    "level": "N4",
+    "kanji": "安",
+    "meaning": "cheap / safe",
+    "alts": [
+      "cheap",
+      "safe",
+      "inexpensive"
+    ],
+    "compound": false
+  },
+  {
+    "id": 103,
+    "level": "N4",
+    "kanji": "強",
+    "meaning": "strong",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 104,
+    "level": "N4",
+    "kanji": "弱",
+    "meaning": "weak",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 105,
+    "level": "N4",
+    "kanji": "明",
+    "meaning": "bright / clear",
+    "alts": [
+      "bright",
+      "clear"
+    ],
+    "compound": false
+  },
+  {
+    "id": 106,
+    "level": "N4",
+    "kanji": "暗",
+    "meaning": "dark",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 107,
+    "level": "N4",
+    "kanji": "楽",
+    "meaning": "fun / comfort",
+    "alts": [
+      "fun",
+      "comfortable",
+      "music"
+    ],
+    "compound": false
+  },
+  {
+    "id": 108,
+    "level": "N4",
+    "kanji": "好",
+    "meaning": "like",
+    "alts": [
+      "fond"
+    ],
+    "compound": false
+  },
+  {
+    "id": 109,
+    "level": "N4",
+    "kanji": "私",
+    "meaning": "I / private",
+    "alts": [
+      "I",
+      "private"
+    ],
+    "compound": false
+  },
+  {
+    "id": 110,
+    "level": "N4",
+    "kanji": "家",
+    "meaning": "house / family",
+    "alts": [
+      "house",
+      "home",
+      "family"
+    ],
+    "compound": false
+  },
+  {
+    "id": 111,
+    "level": "N4",
+    "kanji": "族",
+    "meaning": "family / tribe",
+    "alts": [
+      "family"
+    ],
+    "compound": false
+  },
+  {
+    "id": 112,
+    "level": "N4",
+    "kanji": "国",
+    "meaning": "country",
+    "alts": [
+      "nation"
+    ],
+    "compound": false
+  },
+  {
+    "id": 113,
+    "level": "N4",
+    "kanji": "入",
+    "meaning": "enter",
+    "alts": [
+      "put in",
+      "insert"
+    ],
+    "compound": false
+  },
+  {
+    "id": 114,
+    "level": "N4",
+    "kanji": "出",
+    "meaning": "exit / go out",
+    "alts": [
+      "go out",
+      "leave",
+      "exit"
+    ],
+    "compound": false
+  },
+  {
+    "id": 115,
+    "level": "N4",
+    "kanji": "住",
+    "meaning": "live / reside",
+    "alts": [
+      "live",
+      "reside"
+    ],
+    "compound": false
+  },
+  {
+    "id": 116,
+    "level": "N4",
+    "kanji": "思",
+    "meaning": "think",
+    "alts": [
+      "feel",
+      "believe"
+    ],
+    "compound": false
+  },
+  {
+    "id": 117,
+    "level": "N4",
+    "kanji": "知",
+    "meaning": "know",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 118,
+    "level": "N4",
+    "kanji": "立",
+    "meaning": "stand",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 119,
+    "level": "N4",
+    "kanji": "座",
+    "meaning": "sit",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 120,
+    "level": "N4",
+    "kanji": "作",
+    "meaning": "make",
+    "alts": [
+      "create"
+    ],
+    "compound": false
+  },
+  {
+    "id": 121,
+    "level": "N4",
+    "kanji": "使",
+    "meaning": "use",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 122,
+    "level": "N4",
+    "kanji": "教",
+    "meaning": "teach",
+    "alts": [
+      "religion",
+      "teach / instruct"
+    ],
+    "compound": false
+  },
+  {
+    "id": 123,
+    "level": "N4",
+    "kanji": "習",
+    "meaning": "learn / practice",
+    "alts": [
+      "practice",
+      "learn"
+    ],
+    "compound": false
+  },
+  {
+    "id": 124,
+    "level": "N4",
+    "kanji": "始",
+    "meaning": "begin",
+    "alts": [
+      "start"
+    ],
+    "compound": false
+  },
+  {
+    "id": 125,
+    "level": "N4",
+    "kanji": "終",
+    "meaning": "end",
+    "alts": [
+      "finish"
+    ],
+    "compound": false
+  },
+  {
+    "id": 126,
+    "level": "N4",
+    "kanji": "開",
+    "meaning": "open",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 127,
+    "level": "N4",
+    "kanji": "閉",
+    "meaning": "close",
+    "alts": [
+      "shut"
+    ],
+    "compound": false
+  },
+  {
+    "id": 128,
+    "level": "N4",
+    "kanji": "歩",
+    "meaning": "walk",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 129,
+    "level": "N4",
+    "kanji": "走",
+    "meaning": "run",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 130,
+    "level": "N4",
+    "kanji": "止",
+    "meaning": "stop",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 131,
+    "level": "N4",
+    "kanji": "働",
+    "meaning": "work",
+    "alts": [
+      "labor"
+    ],
+    "compound": false
+  },
+  {
+    "id": 132,
+    "level": "N4",
+    "kanji": "会",
+    "meaning": "meet",
+    "alts": [
+      "meeting",
+      "association"
+    ],
+    "compound": false
+  },
+  {
+    "id": 133,
+    "level": "N4",
+    "kanji": "社",
+    "meaning": "company / shrine",
+    "alts": [
+      "company",
+      "shrine"
+    ],
+    "compound": false
+  },
+  {
+    "id": 134,
+    "level": "N4",
+    "kanji": "店",
+    "meaning": "shop",
+    "alts": [
+      "store"
+    ],
+    "compound": false
+  },
+  {
+    "id": 135,
+    "level": "N4",
+    "kanji": "員",
+    "meaning": "member / employee",
+    "alts": [
+      "member",
+      "employee"
+    ],
+    "compound": false
+  },
+  {
+    "id": 136,
+    "level": "N4",
+    "kanji": "料",
+    "meaning": "fee / material",
+    "alts": [
+      "fee",
+      "material"
+    ],
+    "compound": false
+  },
+  {
+    "id": 137,
+    "level": "N4",
+    "kanji": "理",
+    "meaning": "reason",
+    "alts": [
+      "logic"
+    ],
+    "compound": false
+  },
+  {
+    "id": 138,
+    "level": "N4",
+    "kanji": "物",
+    "meaning": "thing",
+    "alts": [
+      "object"
+    ],
+    "compound": false
+  },
+  {
+    "id": 139,
+    "level": "N4",
+    "kanji": "事",
+    "meaning": "thing / matter",
+    "alts": [
+      "matter",
+      "event"
+    ],
+    "compound": false
+  },
+  {
+    "id": 140,
+    "level": "N4",
+    "kanji": "旅",
+    "meaning": "travel",
+    "alts": [
+      "trip"
+    ],
+    "compound": false
+  },
+  {
+    "id": 141,
+    "level": "N4",
+    "kanji": "度",
+    "meaning": "degree / time",
+    "alts": [
+      "degree",
+      "counter for occurrences"
+    ],
+    "compound": false
+  },
+  {
+    "id": 142,
+    "level": "N4",
+    "kanji": "体",
+    "meaning": "body",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 143,
+    "level": "N4",
+    "kanji": "心",
+    "meaning": "heart / mind",
+    "alts": [
+      "heart",
+      "mind"
+    ],
+    "compound": false
+  },
+  {
+    "id": 144,
+    "level": "N4",
+    "kanji": "病",
+    "meaning": "illness",
+    "alts": [
+      "sickness"
+    ],
+    "compound": false
+  },
+  {
+    "id": 145,
+    "level": "N4",
+    "kanji": "薬",
+    "meaning": "medicine",
+    "alts": [
+      "drug"
+    ],
+    "compound": false
+  },
+  {
+    "id": 146,
+    "level": "N4",
+    "kanji": "肉",
+    "meaning": "meat",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 147,
+    "level": "N4",
+    "kanji": "魚",
+    "meaning": "fish",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 148,
+    "level": "N4",
+    "kanji": "鳥",
+    "meaning": "bird",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 149,
+    "level": "N4",
+    "kanji": "花",
+    "meaning": "flower",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 150,
+    "level": "N4",
+    "kanji": "草",
+    "meaning": "grass",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 151,
+    "level": "N4",
+    "kanji": "森",
+    "meaning": "forest",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 152,
+    "level": "N4",
+    "kanji": "海",
+    "meaning": "sea",
+    "alts": [
+      "ocean"
+    ],
+    "compound": false
+  },
+  {
+    "id": 153,
+    "level": "N4",
+    "kanji": "風",
+    "meaning": "wind",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 154,
+    "level": "N4",
+    "kanji": "雪",
+    "meaning": "snow",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 155,
+    "level": "N4",
+    "kanji": "会社",
+    "meaning": "company",
+    "alts": [
+      "corporation"
+    ],
+    "compound": true
+  },
+  {
+    "id": 156,
+    "level": "N4",
+    "kanji": "社員",
+    "meaning": "employee",
+    "alts": [
+      "company employee"
+    ],
+    "compound": true
+  },
+  {
+    "id": 157,
+    "level": "N4",
+    "kanji": "店員",
+    "meaning": "store clerk",
+    "alts": [
+      "clerk"
+    ],
+    "compound": true
+  },
+  {
+    "id": 158,
+    "level": "N4",
+    "kanji": "料理",
+    "meaning": "cooking",
+    "alts": [
+      "cuisine",
+      "food (cooked)"
+    ],
+    "compound": true
+  },
+  {
+    "id": 159,
+    "level": "N4",
+    "kanji": "新聞",
+    "meaning": "newspaper",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 160,
+    "level": "N4",
+    "kanji": "図書館",
+    "meaning": "library",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 161,
+    "level": "N4",
+    "kanji": "銀行",
+    "meaning": "bank",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 162,
+    "level": "N4",
+    "kanji": "病院",
+    "meaning": "hospital",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 163,
+    "level": "N4",
+    "kanji": "薬局",
+    "meaning": "pharmacy",
+    "alts": [
+      "drugstore"
+    ],
+    "compound": true
+  },
+  {
+    "id": 164,
+    "level": "N4",
+    "kanji": "仕事",
+    "meaning": "work / job",
+    "alts": [
+      "job"
+    ],
+    "compound": true
+  },
+  {
+    "id": 165,
+    "level": "N4",
+    "kanji": "旅行",
+    "meaning": "travel",
+    "alts": [
+      "trip"
+    ],
+    "compound": true
+  },
+  {
+    "id": 166,
+    "level": "N4",
+    "kanji": "運転",
+    "meaning": "driving",
+    "alts": [
+      "operate (vehicle)"
+    ],
+    "compound": true
+  },
+  {
+    "id": 167,
+    "level": "N4",
+    "kanji": "自転車",
+    "meaning": "bicycle",
+    "alts": [
+      "bike"
+    ],
+    "compound": true
+  },
+  {
+    "id": 168,
+    "level": "N4",
+    "kanji": "電気",
+    "meaning": "electricity",
+    "alts": [
+      "electric power"
+    ],
+    "compound": true
+  },
+  {
+    "id": 169,
+    "level": "N4",
+    "kanji": "火山",
+    "meaning": "volcano",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 170,
+    "level": "N4",
+    "kanji": "海岸",
+    "meaning": "coast",
+    "alts": [
+      "seashore"
+    ],
+    "compound": true
+  },
+  {
+    "id": 171,
+    "level": "N3",
+    "kanji": "意",
+    "meaning": "meaning / intention",
+    "alts": [
+      "intention",
+      "idea",
+      "meaning"
+    ],
+    "compound": false
+  },
+  {
+    "id": 172,
+    "level": "N3",
+    "kanji": "味",
+    "meaning": "taste / flavor",
+    "alts": [
+      "taste",
+      "flavor"
+    ],
+    "compound": false
+  },
+  {
+    "id": 173,
+    "level": "N3",
+    "kanji": "決",
+    "meaning": "decide",
+    "alts": [
+      "determine"
+    ],
+    "compound": false
+  },
+  {
+    "id": 174,
+    "level": "N3",
+    "kanji": "続",
+    "meaning": "continue",
+    "alts": [
+      "continue / follow"
+    ],
+    "compound": false
+  },
+  {
+    "id": 175,
+    "level": "N3",
+    "kanji": "変",
+    "meaning": "change / strange",
+    "alts": [
+      "change",
+      "strange"
+    ],
+    "compound": false
+  },
+  {
+    "id": 176,
+    "level": "N3",
+    "kanji": "加",
+    "meaning": "add",
+    "alts": [
+      "increase"
+    ],
+    "compound": false
+  },
+  {
+    "id": 177,
+    "level": "N3",
+    "kanji": "減",
+    "meaning": "decrease",
+    "alts": [
+      "reduce"
+    ],
+    "compound": false
+  },
+  {
+    "id": 178,
+    "level": "N3",
+    "kanji": "必",
+    "meaning": "certain / 반드시",
+    "alts": [
+      "certain",
+      "inevitable",
+      "sure"
+    ],
+    "compound": false
+  },
+  {
+    "id": 179,
+    "level": "N3",
+    "kanji": "要",
+    "meaning": "need / important",
+    "alts": [
+      "need",
+      "important",
+      "require"
+    ],
+    "compound": false
+  },
+  {
+    "id": 180,
+    "level": "N3",
+    "kanji": "考",
+    "meaning": "think / consider",
+    "alts": [
+      "consider",
+      "think"
+    ],
+    "compound": false
+  },
+  {
+    "id": 181,
+    "level": "N3",
+    "kanji": "案",
+    "meaning": "plan / idea",
+    "alts": [
+      "plan",
+      "proposal"
+    ],
+    "compound": false
+  },
+  {
+    "id": 182,
+    "level": "N3",
+    "kanji": "選",
+    "meaning": "choose",
+    "alts": [
+      "select"
+    ],
+    "compound": false
+  },
+  {
+    "id": 183,
+    "level": "N3",
+    "kanji": "比",
+    "meaning": "compare",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 184,
+    "level": "N3",
+    "kanji": "最",
+    "meaning": "most",
+    "alts": [
+      "the most"
+    ],
+    "compound": false
+  },
+  {
+    "id": 185,
+    "level": "N3",
+    "kanji": "初",
+    "meaning": "first / beginning",
+    "alts": [
+      "first",
+      "beginning"
+    ],
+    "compound": false
+  },
+  {
+    "id": 186,
+    "level": "N3",
+    "kanji": "終",
+    "meaning": "end",
+    "alts": [
+      "finish"
+    ],
+    "compound": false
+  },
+  {
+    "id": 187,
+    "level": "N3",
+    "kanji": "取",
+    "meaning": "take",
+    "alts": [
+      "get"
+    ],
+    "compound": false
+  },
+  {
+    "id": 188,
+    "level": "N3",
+    "kanji": "持",
+    "meaning": "hold / have",
+    "alts": [
+      "hold",
+      "carry",
+      "possess"
+    ],
+    "compound": false
+  },
+  {
+    "id": 189,
+    "level": "N3",
+    "kanji": "守",
+    "meaning": "protect",
+    "alts": [
+      "keep"
+    ],
+    "compound": false
+  },
+  {
+    "id": 190,
+    "level": "N3",
+    "kanji": "受",
+    "meaning": "receive",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 191,
+    "level": "N3",
+    "kanji": "放",
+    "meaning": "release / let go",
+    "alts": [
+      "release",
+      "set free"
+    ],
+    "compound": false
+  },
+  {
+    "id": 192,
+    "level": "N3",
+    "kanji": "向",
+    "meaning": "toward",
+    "alts": [
+      "face toward"
+    ],
+    "compound": false
+  },
+  {
+    "id": 193,
+    "level": "N3",
+    "kanji": "反",
+    "meaning": "anti / oppose",
+    "alts": [
+      "oppose",
+      "reverse"
+    ],
+    "compound": false
+  },
+  {
+    "id": 194,
+    "level": "N3",
+    "kanji": "対",
+    "meaning": "opposite",
+    "alts": [
+      "versus"
+    ],
+    "compound": false
+  },
+  {
+    "id": 195,
+    "level": "N3",
+    "kanji": "同",
+    "meaning": "same",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 196,
+    "level": "N3",
+    "kanji": "違",
+    "meaning": "different",
+    "alts": [
+      "wrong",
+      "different"
+    ],
+    "compound": false
+  },
+  {
+    "id": 197,
+    "level": "N3",
+    "kanji": "残",
+    "meaning": "remain",
+    "alts": [
+      "left over"
+    ],
+    "compound": false
+  },
+  {
+    "id": 198,
+    "level": "N3",
+    "kanji": "込",
+    "meaning": "be crowded / put into",
+    "alts": [
+      "crowded",
+      "insert"
+    ],
+    "compound": false
+  },
+  {
+    "id": 199,
+    "level": "N3",
+    "kanji": "急",
+    "meaning": "urgent / suddenly",
+    "alts": [
+      "urgent",
+      "sudden"
+    ],
+    "compound": false
+  },
+  {
+    "id": 200,
+    "level": "N3",
+    "kanji": "静",
+    "meaning": "quiet",
+    "alts": [
+      "calm"
+    ],
+    "compound": false
+  },
+  {
+    "id": 201,
+    "level": "N3",
+    "kanji": "動",
+    "meaning": "move",
+    "alts": [
+      "motion"
+    ],
+    "compound": false
+  },
+  {
+    "id": 202,
+    "level": "N3",
+    "kanji": "流",
+    "meaning": "flow",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 203,
+    "level": "N3",
+    "kanji": "曲",
+    "meaning": "bend / music",
+    "alts": [
+      "bend",
+      "song",
+      "music"
+    ],
+    "compound": false
+  },
+  {
+    "id": 204,
+    "level": "N3",
+    "kanji": "直",
+    "meaning": "straight / fix",
+    "alts": [
+      "straight",
+      "fix",
+      "correct"
+    ],
+    "compound": false
+  },
+  {
+    "id": 205,
+    "level": "N3",
+    "kanji": "調",
+    "meaning": "investigate / tune",
+    "alts": [
+      "investigate",
+      "adjust",
+      "tone"
+    ],
+    "compound": false
+  },
+  {
+    "id": 206,
+    "level": "N3",
+    "kanji": "信",
+    "meaning": "trust / believe",
+    "alts": [
+      "trust",
+      "belief"
+    ],
+    "compound": false
+  },
+  {
+    "id": 207,
+    "level": "N3",
+    "kanji": "疑",
+    "meaning": "doubt",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 208,
+    "level": "N3",
+    "kanji": "係",
+    "meaning": "connection / 담당",
+    "alts": [
+      "relation",
+      "person in charge"
+    ],
+    "compound": false
+  },
+  {
+    "id": 209,
+    "level": "N3",
+    "kanji": "連",
+    "meaning": "connect",
+    "alts": [
+      "link"
+    ],
+    "compound": false
+  },
+  {
+    "id": 210,
+    "level": "N3",
+    "kanji": "絡",
+    "meaning": "entangle / contact",
+    "alts": [
+      "entangle",
+      "involve",
+      "contact"
+    ],
+    "compound": false
+  },
+  {
+    "id": 211,
+    "level": "N3",
+    "kanji": "交",
+    "meaning": "mix / interact",
+    "alts": [
+      "interact",
+      "mix",
+      "exchange"
+    ],
+    "compound": false
+  },
+  {
+    "id": 212,
+    "level": "N3",
+    "kanji": "通",
+    "meaning": "pass / commute",
+    "alts": [
+      "pass",
+      "go through",
+      "commute"
+    ],
+    "compound": false
+  },
+  {
+    "id": 213,
+    "level": "N3",
+    "kanji": "達",
+    "meaning": "reach / accomplish",
+    "alts": [
+      "reach",
+      "attain"
+    ],
+    "compound": false
+  },
+  {
+    "id": 214,
+    "level": "N3",
+    "kanji": "配",
+    "meaning": "distribute",
+    "alts": [
+      "deliver"
+    ],
+    "compound": false
+  },
+  {
+    "id": 215,
+    "level": "N3",
+    "kanji": "運",
+    "meaning": "carry / luck",
+    "alts": [
+      "carry",
+      "transport",
+      "luck"
+    ],
+    "compound": false
+  },
+  {
+    "id": 216,
+    "level": "N3",
+    "kanji": "転",
+    "meaning": "turn / revolve",
+    "alts": [
+      "turn",
+      "rotate"
+    ],
+    "compound": false
+  },
+  {
+    "id": 217,
+    "level": "N3",
+    "kanji": "議",
+    "meaning": "discussion",
+    "alts": [
+      "debate"
+    ],
+    "compound": false
+  },
+  {
+    "id": 218,
+    "level": "N3",
+    "kanji": "指",
+    "meaning": "finger / point",
+    "alts": [
+      "finger",
+      "point"
+    ],
+    "compound": false
+  },
+  {
+    "id": 219,
+    "level": "N3",
+    "kanji": "押",
+    "meaning": "push",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 220,
+    "level": "N3",
+    "kanji": "引",
+    "meaning": "pull",
+    "alts": [
+      "draw"
+    ],
+    "compound": false
+  },
+  {
+    "id": 221,
+    "level": "N3",
+    "kanji": "払",
+    "meaning": "pay",
+    "alts": [
+      "wipe"
+    ],
+    "compound": false
+  },
+  {
+    "id": 222,
+    "level": "N3",
+    "kanji": "込",
+    "meaning": "crowded / include",
+    "alts": [
+      "crowded",
+      "include"
+    ],
+    "compound": false
+  },
+  {
+    "id": 223,
+    "level": "N3",
+    "kanji": "計",
+    "meaning": "measure / plan",
+    "alts": [
+      "measure",
+      "plan"
+    ],
+    "compound": false
+  },
+  {
+    "id": 224,
+    "level": "N3",
+    "kanji": "期",
+    "meaning": "period / time",
+    "alts": [
+      "period",
+      "term"
+    ],
+    "compound": false
+  },
+  {
+    "id": 225,
+    "level": "N3",
+    "kanji": "題",
+    "meaning": "topic",
+    "alts": [
+      "title",
+      "subject"
+    ],
+    "compound": false
+  },
+  {
+    "id": 226,
+    "level": "N3",
+    "kanji": "界",
+    "meaning": "world / boundary",
+    "alts": [
+      "world",
+      "boundary"
+    ],
+    "compound": false
+  },
+  {
+    "id": 227,
+    "level": "N3",
+    "kanji": "究",
+    "meaning": "research",
+    "alts": [
+      "investigate"
+    ],
+    "compound": false
+  },
+  {
+    "id": 228,
+    "level": "N3",
+    "kanji": "研",
+    "meaning": "study / sharpen",
+    "alts": [
+      "research",
+      "study",
+      "grind"
+    ],
+    "compound": false
+  },
+  {
+    "id": 229,
+    "level": "N3",
+    "kanji": "資",
+    "meaning": "resources",
+    "alts": [
+      "capital",
+      "resources"
+    ],
+    "compound": false
+  },
+  {
+    "id": 230,
+    "level": "N3",
+    "kanji": "料",
+    "meaning": "materials / fee",
+    "alts": [
+      "materials",
+      "fee"
+    ],
+    "compound": false
+  },
+  {
+    "id": 231,
+    "level": "N3",
+    "kanji": "増",
+    "meaning": "increase",
+    "alts": [
+      "grow"
+    ],
+    "compound": false
+  },
+  {
+    "id": 232,
+    "level": "N3",
+    "kanji": "減",
+    "meaning": "decrease",
+    "alts": [
+      "reduce"
+    ],
+    "compound": false
+  },
+  {
+    "id": 233,
+    "level": "N3",
+    "kanji": "意味",
+    "meaning": "meaning",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 234,
+    "level": "N3",
+    "kanji": "意見",
+    "meaning": "opinion",
+    "alts": [
+      "viewpoint"
+    ],
+    "compound": true
+  },
+  {
+    "id": 235,
+    "level": "N3",
+    "kanji": "必要",
+    "meaning": "necessary",
+    "alts": [
+      "need"
+    ],
+    "compound": true
+  },
+  {
+    "id": 236,
+    "level": "N3",
+    "kanji": "大切",
+    "meaning": "important",
+    "alts": [
+      "precious"
+    ],
+    "compound": true
+  },
+  {
+    "id": 237,
+    "level": "N3",
+    "kanji": "可能",
+    "meaning": "possible",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 238,
+    "level": "N3",
+    "kanji": "無理",
+    "meaning": "impossible / unreasonable",
+    "alts": [
+      "unreasonable"
+    ],
+    "compound": true
+  },
+  {
+    "id": 239,
+    "level": "N3",
+    "kanji": "予定",
+    "meaning": "schedule / plan",
+    "alts": [
+      "plan"
+    ],
+    "compound": true
+  },
+  {
+    "id": 240,
+    "level": "N3",
+    "kanji": "約束",
+    "meaning": "promise",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 241,
+    "level": "N3",
+    "kanji": "開始",
+    "meaning": "start / begin",
+    "alts": [
+      "beginning"
+    ],
+    "compound": true
+  },
+  {
+    "id": 242,
+    "level": "N3",
+    "kanji": "終了",
+    "meaning": "end / finish",
+    "alts": [
+      "finish"
+    ],
+    "compound": true
+  },
+  {
+    "id": 243,
+    "level": "N3",
+    "kanji": "変更",
+    "meaning": "change",
+    "alts": [
+      "modification"
+    ],
+    "compound": true
+  },
+  {
+    "id": 244,
+    "level": "N3",
+    "kanji": "説明",
+    "meaning": "explanation",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 245,
+    "level": "N3",
+    "kanji": "利用",
+    "meaning": "use / utilization",
+    "alts": [
+      "use"
+    ],
+    "compound": true
+  },
+  {
+    "id": 246,
+    "level": "N3",
+    "kanji": "連絡",
+    "meaning": "contact",
+    "alts": [
+      "communication"
+    ],
+    "compound": true
+  },
+  {
+    "id": 247,
+    "level": "N3",
+    "kanji": "交通",
+    "meaning": "traffic / transportation",
+    "alts": [
+      "transportation"
+    ],
+    "compound": true
+  },
+  {
+    "id": 248,
+    "level": "N3",
+    "kanji": "運転",
+    "meaning": "driving",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 249,
+    "level": "N3",
+    "kanji": "料金",
+    "meaning": "fee",
+    "alts": [
+      "charge"
+    ],
+    "compound": true
+  },
+  {
+    "id": 250,
+    "level": "N3",
+    "kanji": "材料",
+    "meaning": "materials / ingredients",
+    "alts": [
+      "ingredients",
+      "materials"
+    ],
+    "compound": true
+  },
+  {
+    "id": 251,
+    "level": "N2",
+    "kanji": "経",
+    "meaning": "manage / pass through",
+    "alts": [
+      "manage",
+      "pass through",
+      "sutra"
+    ],
+    "compound": false
+  },
+  {
+    "id": 252,
+    "level": "N2",
+    "kanji": "営",
+    "meaning": "manage / run",
+    "alts": [
+      "run",
+      "operate",
+      "manage"
+    ],
+    "compound": false
+  },
+  {
+    "id": 253,
+    "level": "N2",
+    "kanji": "済",
+    "meaning": "finish / settle",
+    "alts": [
+      "settle",
+      "finish"
+    ],
+    "compound": false
+  },
+  {
+    "id": 254,
+    "level": "N2",
+    "kanji": "務",
+    "meaning": "duty / task",
+    "alts": [
+      "duty",
+      "task"
+    ],
+    "compound": false
+  },
+  {
+    "id": 255,
+    "level": "N2",
+    "kanji": "責",
+    "meaning": "responsibility",
+    "alts": [
+      "blame"
+    ],
+    "compound": false
+  },
+  {
+    "id": 256,
+    "level": "N2",
+    "kanji": "任",
+    "meaning": "responsibility / 맡다",
+    "alts": [
+      "responsibility",
+      "entrust"
+    ],
+    "compound": false
+  },
+  {
+    "id": 257,
+    "level": "N2",
+    "kanji": "権",
+    "meaning": "rights / authority",
+    "alts": [
+      "rights",
+      "authority",
+      "power"
+    ],
+    "compound": false
+  },
+  {
+    "id": 258,
+    "level": "N2",
+    "kanji": "義",
+    "meaning": "justice / meaning",
+    "alts": [
+      "justice",
+      "righteousness"
+    ],
+    "compound": false
+  },
+  {
+    "id": 259,
+    "level": "N2",
+    "kanji": "税",
+    "meaning": "tax",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 260,
+    "level": "N2",
+    "kanji": "規",
+    "meaning": "rule / standard",
+    "alts": [
+      "standard",
+      "rule"
+    ],
+    "compound": false
+  },
+  {
+    "id": 261,
+    "level": "N2",
+    "kanji": "則",
+    "meaning": "rule",
+    "alts": [
+      "law",
+      "regulation"
+    ],
+    "compound": false
+  },
+  {
+    "id": 262,
+    "level": "N2",
+    "kanji": "制",
+    "meaning": "system / control",
+    "alts": [
+      "control",
+      "system"
+    ],
+    "compound": false
+  },
+  {
+    "id": 263,
+    "level": "N2",
+    "kanji": "限",
+    "meaning": "limit",
+    "alts": [],
+    "compound": false
+  },
+  {
+    "id": 264,
+    "level": "N2",
+    "kanji": "禁",
+    "meaning": "prohibit",
+    "alts": [
+      "ban"
+    ],
+    "compound": false
+  },
+  {
+    "id": 265,
+    "level": "N2",
+    "kanji": "可",
+    "meaning": "possible / permit",
+    "alts": [
+      "possible",
+      "permit"
+    ],
+    "compound": false
+  },
+  {
+    "id": 266,
+    "level": "N2",
+    "kanji": "認",
+    "meaning": "recognize / approve",
+    "alts": [
+      "recognize",
+      "approve"
+    ],
+    "compound": false
+  },
+  {
+    "id": 267,
+    "level": "N2",
+    "kanji": "許",
+    "meaning": "permit",
+    "alts": [
+      "allow",
+      "forgive"
+    ],
+    "compound": false
+  },
+  {
+    "id": 268,
+    "level": "N2",
+    "kanji": "申",
+    "meaning": "say / apply",
+    "alts": [
+      "apply",
+      "report"
+    ],
+    "compound": false
+  },
+  {
+    "id": 269,
+    "level": "N2",
+    "kanji": "報",
+    "meaning": "report / news",
+    "alts": [
+      "report",
+      "news"
+    ],
+    "compound": false
+  },
+  {
+    "id": 270,
+    "level": "N2",
+    "kanji": "告",
+    "meaning": "announce",
+    "alts": [
+      "inform"
+    ],
+    "compound": false
+  },
+  {
+    "id": 271,
+    "level": "N2",
+    "kanji": "応",
+    "meaning": "respond",
+    "alts": [
+      "apply"
+    ],
+    "compound": false
+  },
+  {
+    "id": 272,
+    "level": "N2",
+    "kanji": "援",
+    "meaning": "support",
+    "alts": [
+      "aid"
+    ],
+    "compound": false
+  },
+  {
+    "id": 273,
+    "level": "N2",
+    "kanji": "護",
+    "meaning": "protect",
+    "alts": [
+      "defend"
+    ],
+    "compound": false
+  },
+  {
+    "id": 274,
+    "level": "N2",
+    "kanji": "被",
+    "meaning": "suffer / be subjected to",
+    "alts": [
+      "be subjected to",
+      "suffer"
+    ],
+    "compound": false
+  },
+  {
+    "id": 275,
+    "level": "N2",
+    "kanji": "害",
+    "meaning": "harm",
+    "alts": [
+      "damage"
+    ],
+    "compound": false
+  },
+  {
+    "id": 276,
+    "level": "N2",
+    "kanji": "損",
+    "meaning": "loss / damage",
+    "alts": [
+      "loss",
+      "damage"
+    ],
+    "compound": false
+  },
+  {
+    "id": 277,
+    "level": "N2",
+    "kanji": "得",
+    "meaning": "gain / obtain",
+    "alts": [
+      "gain",
+      "obtain",
+      "benefit"
+    ],
+    "compound": false
+  },
+  {
+    "id": 278,
+    "level": "N2",
+    "kanji": "失",
+    "meaning": "lose / failure",
+    "alts": [
+      "lose",
+      "loss"
+    ],
+    "compound": false
+  },
+  {
+    "id": 279,
+    "level": "N2",
+    "kanji": "値",
+    "meaning": "value / price",
+    "alts": [
+      "value",
+      "price"
+    ],
+    "compound": false
+  },
+  {
+    "id": 280,
+    "level": "N2",
+    "kanji": "費",
+    "meaning": "expense",
+    "alts": [
+      "cost"
+    ],
+    "compound": false
+  },
+  {
+    "id": 281,
+    "level": "N2",
+    "kanji": "額",
+    "meaning": "amount / forehead",
+    "alts": [
+      "amount",
+      "sum"
+    ],
+    "compound": false
+  },
+  {
+    "id": 282,
+    "level": "N2",
+    "kanji": "算",
+    "meaning": "calculate",
+    "alts": [
+      "calculation"
+    ],
+    "compound": false
+  },
+  {
+    "id": 283,
+    "level": "N2",
+    "kanji": "導",
+    "meaning": "guide / lead",
+    "alts": [
+      "lead",
+      "guide"
+    ],
+    "compound": false
+  },
+  {
+    "id": 284,
+    "level": "N2",
+    "kanji": "統",
+    "meaning": "unite / govern",
+    "alts": [
+      "unite",
+      "govern"
+    ],
+    "compound": false
+  },
+  {
+    "id": 285,
+    "level": "N2",
+    "kanji": "率",
+    "meaning": "rate / lead",
+    "alts": [
+      "rate",
+      "percentage",
+      "lead"
+    ],
+    "compound": false
+  },
+  {
+    "id": 286,
+    "level": "N2",
+    "kanji": "績",
+    "meaning": "results / achievements",
+    "alts": [
+      "achievements",
+      "results"
+    ],
+    "compound": false
+  },
+  {
+    "id": 287,
+    "level": "N2",
+    "kanji": "態",
+    "meaning": "condition / state",
+    "alts": [
+      "state",
+      "condition"
+    ],
+    "compound": false
+  },
+  {
+    "id": 288,
+    "level": "N2",
+    "kanji": "況",
+    "meaning": "condition / situation",
+    "alts": [
+      "situation",
+      "condition"
+    ],
+    "compound": false
+  },
+  {
+    "id": 289,
+    "level": "N2",
+    "kanji": "影",
+    "meaning": "shadow / influence",
+    "alts": [
+      "shadow",
+      "influence"
+    ],
+    "compound": false
+  },
+  {
+    "id": 290,
+    "level": "N2",
+    "kanji": "響",
+    "meaning": "echo / affect",
+    "alts": [
+      "echo",
+      "affect"
+    ],
+    "compound": false
+  },
+  {
+    "id": 291,
+    "level": "N2",
+    "kanji": "環",
+    "meaning": "ring / environment",
+    "alts": [
+      "environment",
+      "circle"
+    ],
+    "compound": false
+  },
+  {
+    "id": 292,
+    "level": "N2",
+    "kanji": "境",
+    "meaning": "boundary / environment",
+    "alts": [
+      "boundary",
+      "environment"
+    ],
+    "compound": false
+  },
+  {
+    "id": 293,
+    "level": "N2",
+    "kanji": "資",
+    "meaning": "resources / capital",
+    "alts": [
+      "resources",
+      "capital"
+    ],
+    "compound": false
+  },
+  {
+    "id": 294,
+    "level": "N2",
+    "kanji": "源",
+    "meaning": "source / origin",
+    "alts": [
+      "source",
+      "origin"
+    ],
+    "compound": false
+  },
+  {
+    "id": 295,
+    "level": "N2",
+    "kanji": "施",
+    "meaning": "carry out",
+    "alts": [
+      "implement",
+      "perform"
+    ],
+    "compound": false
+  },
+  {
+    "id": 296,
+    "level": "N2",
+    "kanji": "設",
+    "meaning": "establish / set up",
+    "alts": [
+      "establish",
+      "set up"
+    ],
+    "compound": false
+  },
+  {
+    "id": 297,
+    "level": "N2",
+    "kanji": "備",
+    "meaning": "prepare / equipment",
+    "alts": [
+      "prepare",
+      "equipment"
+    ],
+    "compound": false
+  },
+  {
+    "id": 298,
+    "level": "N2",
+    "kanji": "復",
+    "meaning": "restore / return",
+    "alts": [
+      "restore",
+      "return"
+    ],
+    "compound": false
+  },
+  {
+    "id": 299,
+    "level": "N2",
+    "kanji": "豊",
+    "meaning": "abundant",
+    "alts": [
+      "rich",
+      "abundant"
+    ],
+    "compound": false
+  },
+  {
+    "id": 300,
+    "level": "N2",
+    "kanji": "経済",
+    "meaning": "economy",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 301,
+    "level": "N2",
+    "kanji": "責任",
+    "meaning": "responsibility",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 302,
+    "level": "N2",
+    "kanji": "権利",
+    "meaning": "rights",
+    "alts": [
+      "right"
+    ],
+    "compound": true
+  },
+  {
+    "id": 303,
+    "level": "N2",
+    "kanji": "法律",
+    "meaning": "law",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 304,
+    "level": "N2",
+    "kanji": "規則",
+    "meaning": "rule / regulations",
+    "alts": [
+      "regulation",
+      "rules"
+    ],
+    "compound": true
+  },
+  {
+    "id": 305,
+    "level": "N2",
+    "kanji": "制度",
+    "meaning": "system",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 306,
+    "level": "N2",
+    "kanji": "許可",
+    "meaning": "permission",
+    "alts": [
+      "permit"
+    ],
+    "compound": true
+  },
+  {
+    "id": 307,
+    "level": "N2",
+    "kanji": "申請",
+    "meaning": "application (request)",
+    "alts": [
+      "application"
+    ],
+    "compound": true
+  },
+  {
+    "id": 308,
+    "level": "N2",
+    "kanji": "報告",
+    "meaning": "report",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 309,
+    "level": "N2",
+    "kanji": "対応",
+    "meaning": "response / handle",
+    "alts": [
+      "handle",
+      "deal with"
+    ],
+    "compound": true
+  },
+  {
+    "id": 310,
+    "level": "N2",
+    "kanji": "支援",
+    "meaning": "support",
+    "alts": [
+      "assistance"
+    ],
+    "compound": true
+  },
+  {
+    "id": 311,
+    "level": "N2",
+    "kanji": "保護",
+    "meaning": "protection",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 312,
+    "level": "N2",
+    "kanji": "被害",
+    "meaning": "damage / victimization",
+    "alts": [
+      "damage"
+    ],
+    "compound": true
+  },
+  {
+    "id": 313,
+    "level": "N2",
+    "kanji": "損害",
+    "meaning": "loss / damage",
+    "alts": [
+      "damage",
+      "loss"
+    ],
+    "compound": true
+  },
+  {
+    "id": 314,
+    "level": "N2",
+    "kanji": "利益",
+    "meaning": "profit / benefit",
+    "alts": [
+      "benefit",
+      "profit"
+    ],
+    "compound": true
+  },
+  {
+    "id": 315,
+    "level": "N2",
+    "kanji": "失敗",
+    "meaning": "failure",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 316,
+    "level": "N2",
+    "kanji": "費用",
+    "meaning": "cost / expense",
+    "alts": [
+      "expense",
+      "cost"
+    ],
+    "compound": true
+  },
+  {
+    "id": 317,
+    "level": "N2",
+    "kanji": "計算",
+    "meaning": "calculation",
+    "alts": [
+      "calculate"
+    ],
+    "compound": true
+  },
+  {
+    "id": 318,
+    "level": "N2",
+    "kanji": "統計",
+    "meaning": "statistics",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 319,
+    "level": "N2",
+    "kanji": "環境",
+    "meaning": "environment",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 320,
+    "level": "N2",
+    "kanji": "資源",
+    "meaning": "resources",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 321,
+    "level": "N2",
+    "kanji": "設備",
+    "meaning": "equipment / facilities",
+    "alts": [
+      "facilities",
+      "equipment"
+    ],
+    "compound": true
+  },
+  {
+    "id": 322,
+    "level": "N1",
+    "kanji": "顕",
+    "meaning": "appear / obvious",
+    "alts": [
+      "obvious",
+      "appear"
+    ],
+    "compound": false
+  },
+  {
+    "id": 323,
+    "level": "N1",
+    "kanji": "著",
+    "meaning": "remarkable / author",
+    "alts": [
+      "remarkable",
+      "author"
+    ],
+    "compound": false
+  },
+  {
+    "id": 324,
+    "level": "N1",
+    "kanji": "概",
+    "meaning": "outline / general",
+    "alts": [
+      "general",
+      "outline"
+    ],
+    "compound": false
+  },
+  {
+    "id": 325,
+    "level": "N1",
+    "kanji": "抽",
+    "meaning": "extract",
+    "alts": [
+      "pull out",
+      "extract"
+    ],
+    "compound": false
+  },
+  {
+    "id": 326,
+    "level": "N1",
+    "kanji": "象",
+    "meaning": "phenomenon / image",
+    "alts": [
+      "phenomenon",
+      "elephant",
+      "image"
+    ],
+    "compound": false
+  },
+  {
+    "id": 327,
+    "level": "N1",
+    "kanji": "諸",
+    "meaning": "various",
+    "alts": [
+      "many",
+      "various"
+    ],
+    "compound": false
+  },
+  {
+    "id": 328,
+    "level": "N1",
+    "kanji": "遍",
+    "meaning": "everywhere / widespread",
+    "alts": [
+      "widespread",
+      "everywhere"
+    ],
+    "compound": false
+  },
+  {
+    "id": 329,
+    "level": "N1",
+    "kanji": "継",
+    "meaning": "inherit / succeed",
+    "alts": [
+      "inherit",
+      "succeed",
+      "continue"
+    ],
+    "compound": false
+  },
+  {
+    "id": 330,
+    "level": "N1",
+    "kanji": "促",
+    "meaning": "urge / prompt",
+    "alts": [
+      "urge",
+      "prompt"
+    ],
+    "compound": false
+  },
+  {
+    "id": 331,
+    "level": "N1",
+    "kanji": "妥",
+    "meaning": "proper / appropriate",
+    "alts": [
+      "appropriate",
+      "proper"
+    ],
+    "compound": false
+  },
+  {
+    "id": 332,
+    "level": "N1",
+    "kanji": "免",
+    "meaning": "exempt",
+    "alts": [
+      "avoid"
+    ],
+    "compound": false
+  },
+  {
+    "id": 333,
+    "level": "N1",
+    "kanji": "賛",
+    "meaning": "approve / praise",
+    "alts": [
+      "approve",
+      "praise"
+    ],
+    "compound": false
+  },
+  {
+    "id": 334,
+    "level": "N1",
+    "kanji": "否",
+    "meaning": "deny",
+    "alts": [
+      "no",
+      "negation"
+    ],
+    "compound": false
+  },
+  {
+    "id": 335,
+    "level": "N1",
+    "kanji": "訴",
+    "meaning": "sue / appeal",
+    "alts": [
+      "appeal",
+      "complain",
+      "sue"
+    ],
+    "compound": false
+  },
+  {
+    "id": 336,
+    "level": "N1",
+    "kanji": "裁",
+    "meaning": "judge",
+    "alts": [
+      "decide",
+      "court"
+    ],
+    "compound": false
+  },
+  {
+    "id": 337,
+    "level": "N1",
+    "kanji": "審",
+    "meaning": "judge / examine",
+    "alts": [
+      "examine",
+      "judge"
+    ],
+    "compound": false
+  },
+  {
+    "id": 338,
+    "level": "N1",
+    "kanji": "賠",
+    "meaning": "compensation",
+    "alts": [
+      "reparation"
+    ],
+    "compound": false
+  },
+  {
+    "id": 339,
+    "level": "N1",
+    "kanji": "償",
+    "meaning": "compensate",
+    "alts": [
+      "reimburse",
+      "compensate"
+    ],
+    "compound": false
+  },
+  {
+    "id": 340,
+    "level": "N1",
+    "kanji": "罰",
+    "meaning": "punishment",
+    "alts": [
+      "penalty"
+    ],
+    "compound": false
+  },
+  {
+    "id": 341,
+    "level": "N1",
+    "kanji": "罷",
+    "meaning": "dismiss / resign",
+    "alts": [
+      "dismiss",
+      "resign"
+    ],
+    "compound": false
+  },
+  {
+    "id": 342,
+    "level": "N1",
+    "kanji": "陳",
+    "meaning": "exhibit / state",
+    "alts": [
+      "state",
+      "declare"
+    ],
+    "compound": false
+  },
+  {
+    "id": 343,
+    "level": "N1",
+    "kanji": "慣",
+    "meaning": "habit / accustomed",
+    "alts": [
+      "habit",
+      "accustomed"
+    ],
+    "compound": false
+  },
+  {
+    "id": 344,
+    "level": "N1",
+    "kanji": "癖",
+    "meaning": "habit / tendency",
+    "alts": [
+      "habit",
+      "tendency"
+    ],
+    "compound": false
+  },
+  {
+    "id": 345,
+    "level": "N1",
+    "kanji": "顧",
+    "meaning": "look back / consult",
+    "alts": [
+      "consult",
+      "look back"
+    ],
+    "compound": false
+  },
+  {
+    "id": 346,
+    "level": "N1",
+    "kanji": "嘱",
+    "meaning": "entrust / request",
+    "alts": [
+      "entrust",
+      "request"
+    ],
+    "compound": false
+  },
+  {
+    "id": 347,
+    "level": "N1",
+    "kanji": "釈",
+    "meaning": "explain / release",
+    "alts": [
+      "explain",
+      "interpret"
+    ],
+    "compound": false
+  },
+  {
+    "id": 348,
+    "level": "N1",
+    "kanji": "緩",
+    "meaning": "loosen / relax",
+    "alts": [
+      "loosen",
+      "relax"
+    ],
+    "compound": false
+  },
+  {
+    "id": 349,
+    "level": "N1",
+    "kanji": "厳",
+    "meaning": "strict / severe",
+    "alts": [
+      "strict",
+      "severe"
+    ],
+    "compound": false
+  },
+  {
+    "id": 350,
+    "level": "N1",
+    "kanji": "緊",
+    "meaning": "tense / tight",
+    "alts": [
+      "tight",
+      "tense"
+    ],
+    "compound": false
+  },
+  {
+    "id": 351,
+    "level": "N1",
+    "kanji": "粋",
+    "meaning": "pure / stylish",
+    "alts": [
+      "pure",
+      "stylish"
+    ],
+    "compound": false
+  },
+  {
+    "id": 352,
+    "level": "N1",
+    "kanji": "卓",
+    "meaning": "excellent / table",
+    "alts": [
+      "excellent",
+      "table"
+    ],
+    "compound": false
+  },
+  {
+    "id": 353,
+    "level": "N1",
+    "kanji": "堅",
+    "meaning": "firm / solid",
+    "alts": [
+      "firm",
+      "solid"
+    ],
+    "compound": false
+  },
+  {
+    "id": 354,
+    "level": "N1",
+    "kanji": "脆",
+    "meaning": "fragile",
+    "alts": [
+      "brittle"
+    ],
+    "compound": false
+  },
+  {
+    "id": 355,
+    "level": "N1",
+    "kanji": "冗",
+    "meaning": "superfluous",
+    "alts": [
+      "redundant"
+    ],
+    "compound": false
+  },
+  {
+    "id": 356,
+    "level": "N1",
+    "kanji": "緻",
+    "meaning": "fine / detailed",
+    "alts": [
+      "fine",
+      "detailed"
+    ],
+    "compound": false
+  },
+  {
+    "id": 357,
+    "level": "N1",
+    "kanji": "密",
+    "meaning": "dense / secret",
+    "alts": [
+      "dense",
+      "secret"
+    ],
+    "compound": false
+  },
+  {
+    "id": 358,
+    "level": "N1",
+    "kanji": "繁",
+    "meaning": "繁忙 /繁殖",
+    "alts": [
+      "busy",
+      "繁忙"
+    ],
+    "compound": false
+  },
+  {
+    "id": 359,
+    "level": "N1",
+    "kanji": "煩",
+    "meaning": "annoying / worry",
+    "alts": [
+      "annoying",
+      "trouble"
+    ],
+    "compound": false
+  },
+  {
+    "id": 360,
+    "level": "N1",
+    "kanji": "寛",
+    "meaning": "tolerant / generous",
+    "alts": [
+      "tolerant",
+      "generous"
+    ],
+    "compound": false
+  },
+  {
+    "id": 361,
+    "level": "N1",
+    "kanji": "慎",
+    "meaning": "careful",
+    "alts": [
+      "prudent"
+    ],
+    "compound": false
+  },
+  {
+    "id": 362,
+    "level": "N1",
+    "kanji": "逸",
+    "meaning": "deviate / escape",
+    "alts": [
+      "deviate",
+      "escape",
+      "excellent"
+    ],
+    "compound": false
+  },
+  {
+    "id": 363,
+    "level": "N1",
+    "kanji": "覆",
+    "meaning": "cover / overturn",
+    "alts": [
+      "cover",
+      "overturn"
+    ],
+    "compound": false
+  },
+  {
+    "id": 364,
+    "level": "N1",
+    "kanji": "譲",
+    "meaning": "yield / transfer",
+    "alts": [
+      "yield",
+      "transfer"
+    ],
+    "compound": false
+  },
+  {
+    "id": 365,
+    "level": "N1",
+    "kanji": "邁",
+    "meaning": "strive / advance",
+    "alts": [
+      "advance",
+      "strive"
+    ],
+    "compound": false
+  },
+  {
+    "id": 366,
+    "level": "N1",
+    "kanji": "斬",
+    "meaning": "slash / decisive",
+    "alts": [
+      "slash",
+      "decisive"
+    ],
+    "compound": false
+  },
+  {
+    "id": 367,
+    "level": "N1",
+    "kanji": "憂",
+    "meaning": "worry / grief",
+    "alts": [
+      "worry",
+      "grief"
+    ],
+    "compound": false
+  },
+  {
+    "id": 368,
+    "level": "N1",
+    "kanji": "悟",
+    "meaning": "realize / enlightenment",
+    "alts": [
+      "realize",
+      "understand"
+    ],
+    "compound": false
+  },
+  {
+    "id": 369,
+    "level": "N1",
+    "kanji": "嫌",
+    "meaning": "dislike",
+    "alts": [
+      "hate"
+    ],
+    "compound": false
+  },
+  {
+    "id": 370,
+    "level": "N1",
+    "kanji": "嘆",
+    "meaning": "lament",
+    "alts": [
+      "sigh",
+      "lament"
+    ],
+    "compound": false
+  },
+  {
+    "id": 371,
+    "level": "N1",
+    "kanji": "概念",
+    "meaning": "concept",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 372,
+    "level": "N1",
+    "kanji": "抽象",
+    "meaning": "abstract",
+    "alts": [
+      "abstraction"
+    ],
+    "compound": true
+  },
+  {
+    "id": 373,
+    "level": "N1",
+    "kanji": "現象",
+    "meaning": "phenomenon",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 374,
+    "level": "N1",
+    "kanji": "普遍",
+    "meaning": "universal / widespread",
+    "alts": [
+      "universal",
+      "widespread"
+    ],
+    "compound": true
+  },
+  {
+    "id": 375,
+    "level": "N1",
+    "kanji": "妥当",
+    "meaning": "appropriate / valid",
+    "alts": [
+      "valid",
+      "appropriate"
+    ],
+    "compound": true
+  },
+  {
+    "id": 376,
+    "level": "N1",
+    "kanji": "免除",
+    "meaning": "exemption",
+    "alts": [
+      "exempt"
+    ],
+    "compound": true
+  },
+  {
+    "id": 377,
+    "level": "N1",
+    "kanji": "賛成",
+    "meaning": "approval",
+    "alts": [
+      "agree",
+      "support"
+    ],
+    "compound": true
+  },
+  {
+    "id": 378,
+    "level": "N1",
+    "kanji": "否定",
+    "meaning": "denial",
+    "alts": [
+      "negation"
+    ],
+    "compound": true
+  },
+  {
+    "id": 379,
+    "level": "N1",
+    "kanji": "訴訟",
+    "meaning": "lawsuit / litigation",
+    "alts": [
+      "litigation",
+      "lawsuit"
+    ],
+    "compound": true
+  },
+  {
+    "id": 380,
+    "level": "N1",
+    "kanji": "裁判",
+    "meaning": "trial / judgment",
+    "alts": [
+      "trial",
+      "court case"
+    ],
+    "compound": true
+  },
+  {
+    "id": 381,
+    "level": "N1",
+    "kanji": "審査",
+    "meaning": "examination / screening",
+    "alts": [
+      "screening",
+      "review"
+    ],
+    "compound": true
+  },
+  {
+    "id": 382,
+    "level": "N1",
+    "kanji": "賠償",
+    "meaning": "compensation",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 383,
+    "level": "N1",
+    "kanji": "罰金",
+    "meaning": "fine (penalty)",
+    "alts": [
+      "fine"
+    ],
+    "compound": true
+  },
+  {
+    "id": 384,
+    "level": "N1",
+    "kanji": "慣習",
+    "meaning": "custom",
+    "alts": [
+      "customary practice"
+    ],
+    "compound": true
+  },
+  {
+    "id": 385,
+    "level": "N1",
+    "kanji": "顧問",
+    "meaning": "advisor",
+    "alts": [
+      "consultant"
+    ],
+    "compound": true
+  },
+  {
+    "id": 386,
+    "level": "N1",
+    "kanji": "解釈",
+    "meaning": "interpretation",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 387,
+    "level": "N1",
+    "kanji": "緊張",
+    "meaning": "tension",
+    "alts": [],
+    "compound": true
+  },
+  {
+    "id": 388,
+    "level": "N1",
+    "kanji": "厳密",
+    "meaning": "strict / precise",
+    "alts": [
+      "precise"
+    ],
+    "compound": true
+  },
+  {
+    "id": 389,
+    "level": "N1",
+    "kanji": "緻密",
+    "meaning": "detailed / meticulous",
+    "alts": [
+      "meticulous",
+      "detailed"
+    ],
+    "compound": true
+  },
+  {
+    "id": 390,
+    "level": "N1",
+    "kanji": "繁忙",
+    "meaning": "busy",
+    "alts": [
+      "busy-ness"
+    ],
+    "compound": true
+  },
+  {
+    "id": 391,
+    "level": "N1",
+    "kanji": "慎重",
+    "meaning": "careful / cautious",
+    "alts": [
+      "cautious",
+      "careful"
+    ],
+    "compound": true
+  }
+]

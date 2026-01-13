@@ -1,0 +1,118 @@
+:root{
+  --bg:#0b0f14;
+  --text:#e9eef6;
+  --muted:#9fb0c6;
+  --line:#203042;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --radius: 18px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font);
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(255,190,120,.22), transparent 60%),
+              radial-gradient(900px 500px at 90% 10%, rgba(122,167,255,.20), transparent 55%),
+              var(--bg);
+  color:var(--text);
+}
+.topbar{display:flex; justify-content:space-between; align-items:center; padding:16px 18px; max-width:980px; margin:0 auto;}
+.brand{display:flex; gap:12px; align-items:center;}
+.logo{
+  width:42px; height:42px; border-radius:12px;
+  display:grid; place-items:center;
+  background: linear-gradient(135deg, rgba(255,190,120,.25), rgba(122,167,255,.18));
+  border:1px solid rgba(255,190,120,.25);
+  box-shadow: var(--shadow);
+  font-weight:900;
+}
+.title{font-weight:900; letter-spacing:.2px}
+.sub{color:var(--muted); font-size:12px; margin-top:2px}
+.wrap{max-width:980px; margin:0 auto; padding:0 18px 28px; display:grid; gap:16px;}
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+h1{margin:0 0 12px 0; font-size:22px}
+hr.sep{border:none; border-top:1px solid var(--line); margin:14px 0}
+.grid2{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:12px;}
+@media (max-width:680px){.grid2{grid-template-columns:1fr}}
+.field label{display:block; font-size:12px; color:var(--muted); margin-bottom:6px}
+.field select, .input{
+  width:100%; padding:12px 12px; border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(10,16,24,.65);
+  color: var(--text); outline:none;
+}
+.field select:focus, .input:focus{border-color: rgba(255,190,120,.6); box-shadow:0 0 0 4px rgba(255,190,120,.14)}
+input[type="range"]{width:100%}
+.hint{color:var(--muted); font-size:12px; margin-top:6px}
+.row{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:14px;}
+.spacer{flex:1}
+.btn{
+  padding:10px 14px; border-radius:14px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(10,16,24,.35);
+  color: var(--text); cursor:pointer; font-weight:800;
+}
+.btn:hover{border-color: rgba(255,190,120,.35)}
+.btn:disabled{opacity:.45; cursor:not-allowed}
+.btn.primary{
+  background: linear-gradient(135deg, rgba(255,190,120,.95), rgba(255,190,120,.55));
+  border-color: rgba(255,190,120,.55);
+  color:#1b0f07;
+}
+.btn.ghost{background:transparent}
+.btn.danger{border-color: rgba(255,107,107,.55); background: rgba(255,107,107,.08)}
+.pill{
+  padding:8px 10px; border-radius:999px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(10,16,24,.35);
+  color: var(--muted); font-size:12px; font-weight:900;
+}
+.gameTop{display:flex; justify-content:space-between; gap:10px; margin-bottom:12px}
+.prompt{
+  padding:14px; border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(10,16,24,.35);
+}
+.label{font-size:12px; color:var(--muted); margin-bottom:8px}
+.qtext{font-size:22px; font-weight:900; line-height:1.25}
+.choices{display:grid; grid-template-columns:1fr; gap:10px; margin-top:12px}
+.choice{
+  text-align:left; padding:12px; border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(10,16,24,.35);
+  cursor:pointer; font-weight:900;
+}
+.choice:hover{border-color: rgba(255,190,120,.35)}
+.choice.selected{border-color: rgba(255,190,120,.8); box-shadow:0 0 0 4px rgba(255,190,120,.12)}
+.choice.good{border-color: rgba(91,227,138,.75); box-shadow:0 0 0 4px rgba(91,227,138,.12)}
+.choice.bad{border-color: rgba(255,107,107,.75); box-shadow:0 0 0 4px rgba(255,107,107,.12)}
+.feedback{
+  margin-top:12px; padding:12px; border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(10,16,24,.35);
+  font-weight:800;
+}
+.feedback.good{border-color: rgba(91,227,138,.55)}
+.feedback.bad{border-color: rgba(255,107,107,.55)}
+.tiny{font-size:12px}
+.muted{color:var(--muted)}
+.big{font-size:18px}
+.bigline{margin-top:6px; font-size:15px}
+.stat{
+  padding:8px 10px; border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  background: rgba(10,16,24,.35);
+  font-weight:900;
+}
+.callout{
+  border-radius:16px; border:1px dashed rgba(255,190,120,.35);
+  padding:12px; background: rgba(255,190,120,.06); margin-top:12px;
+}
+.footer{max-width:980px; margin:0 auto; padding:0 18px 22px; opacity:.9}

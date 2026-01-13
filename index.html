@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Kanji Meaning Trainer</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">漢</div>
+      <div>
+        <div class="title">Kanji Meaning Trainer</div>
+        <div class="sub">Meanings only • No readings • PWA • v1.0.0</div>
+      </div>
+    </div>
+    <button id="installBtn" class="btn ghost" hidden>Install</button>
+  </header>
+
+  <main class="wrap">
+    <section id="screenSetup" class="card">
+      <h1>Setup</h1>
+
+      <div class="grid2">
+        <div class="field">
+          <label for="level">JLPT level</label>
+          <select id="level">
+            <option value="N5">N5</option>
+            <option value="N4">N4</option>
+            <option value="N3" selected>N3</option>
+            <option value="N2">N2</option>
+            <option value="N1">N1</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="compounds">Combination kanji</label>
+          <select id="compounds">
+            <option value="off" selected>Off (single kanji only)</option>
+            <option value="on">On (include compounds)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="direction">Direction</label>
+          <select id="direction">
+            <option value="k-en">Kanji → English</option>
+            <option value="en-k">English → Kanji</option>
+            <option value="mixed" selected>Mixed</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="mode">Answer type</label>
+          <select id="mode">
+            <option value="mc">Multiple choice</option>
+            <option value="write">Written</option>
+            <option value="mixed" selected>Mixed</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="count">Questions (5–20)</label>
+          <input id="count" type="range" min="5" max="20" step="1" value="10" />
+          <div class="hint"><span id="countLabel">10</span> questions</div>
+        </div>
+
+        <div class="field">
+          <label for="shuffle">Question order</label>
+          <select id="shuffle">
+            <option value="on" selected>Shuffle</option>
+            <option value="off">In order</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <button id="startBtn" class="btn primary">Start</button>
+        <button id="practiceBtn" class="btn">Quick 5</button>
+        <button id="aboutBtn" class="btn ghost">About</button>
+      </div>
+
+      <div id="about" class="callout" hidden>
+        <p>
+          • Meanings only — <b>no readings</b><br/>
+          • Pick JLPT level and optionally include <b>compounds</b> (two+ kanji)<br/>
+          • Direction: Kanji→English / English→Kanji / Mixed<br/>
+          • Multiple choice or Written (or Mixed)<br/>
+          • <b>Never auto-advances</b> — you must tap <b>Next</b>
+        </p>
+      </div>
+
+      <div class="tiny muted" id="bankInfo"></div>
+    </section>
+
+    <section id="screenGame" class="card" hidden>
+      <div class="gameTop">
+        <div class="pill" id="progressPill">Q 1 / 10</div>
+        <div class="pill" id="metaPill">N3 • Mixed</div>
+      </div>
+
+      <div class="prompt">
+        <div class="label" id="promptLabel">Meaning</div>
+        <div class="qtext" id="questionText">Loading…</div>
+      </div>
+
+      <div id="mcArea" hidden>
+        <div class="choices" id="choices"></div>
+      </div>
+
+      <div id="writeArea" hidden>
+        <label class="label" for="writeInput">Your answer</label>
+        <input id="writeInput" class="input" type="text" autocomplete="off" spellcheck="false" />
+        <div class="tiny muted" id="writeHint">Press Submit to check. You can try again before Next.</div>
+      </div>
+
+      <div id="feedback" class="feedback" hidden></div>
+
+      <div class="row">
+        <button id="submitBtn" class="btn primary">Submit</button>
+        <button id="showBtn" class="btn">Show answer</button>
+        <button id="nextBtn" class="btn ghost" disabled>Next</button>
+      </div>
+
+      <hr class="sep" />
+
+      <div class="row">
+        <div class="stat">✅ <span id="correctCount">0</span></div>
+        <div class="stat">❌ <span id="wrongCount">0</span></div>
+        <div class="spacer"></div>
+        <button id="quitBtn" class="btn danger">Quit</button>
+      </div>
+    </section>
+
+    <section id="screenDone" class="card" hidden>
+      <h1>Done!</h1>
+      <p class="big">
+        Score: <b><span id="scoreText">0/0</span></b>
+      </p>
+      <div class="callout">
+        <div class="tiny muted">Breakdown</div>
+        <div class="bigline">✅ Correct: <b><span id="doneCorrect">0</span></b></div>
+        <div class="bigline">❌ Wrong attempts: <b><span id="doneWrong">0</span></b></div>
+      </div>
+      <div class="row">
+        <button id="restartBtn" class="btn primary">Play again</button>
+        <button id="backBtn" class="btn">Back to setup</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="tiny muted">Kanji meanings only • No auto-advance</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

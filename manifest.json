@@ -1,0 +1,21 @@
+{
+  "name": "Kanji Meaning Trainer",
+  "short_name": "Kanji Meanings",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0f14",
+  "theme_color": "#0b0f14",
+  "description": "Learn kanji meanings (no readings). Pick JLPT level. Optional compounds. No auto-advance.",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
