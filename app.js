@@ -12,7 +12,6 @@ const $ = (id) => document.getElementById(id);
 const screens = { setup: $("screenSetup"), game: $("screenGame"), done: $("screenDone") };
 const LESSON_SIZE = 10;
 const STAR_STORAGE_KEY = "kanji-meaning-trainer-starred";
-const STAR_CLICK_GUARD_MS = 500;
 
 const state = {
   all: [],
@@ -40,7 +39,6 @@ const state = {
 };
 
 let deferredPrompt = null;
-let ignoreStarClickUntil = 0;
 window.addEventListener("beforeinstallprompt", (e) => {
   e.preventDefault();
   deferredPrompt = e;
@@ -202,8 +200,7 @@ function updateStarButton(){
   btn.title = starred ? "Unstar" : "Mark for review";
 }
 
-function toggleStar(event){
-  if (event?.type === "click" && Date.now() < ignoreStarClickUntil) return;
+function toggleStar(){
   if (!state.current) return;
   const id = Number(state.current.id);
   if (!Number.isFinite(id)) return;
@@ -536,11 +533,18 @@ $("submitBtn").addEventListener("click", submit);
 $("showBtn").addEventListener("click", showAnswer);
 $("nextBtn").addEventListener("click", next);
 $("writeInput").addEventListener("keydown", (e) => { if (e.key === "Enter") submit(); });
-$("starBtn").addEventListener("pointerup", (event) => {
-  ignoreStarClickUntil = Date.now() + STAR_CLICK_GUARD_MS;
-  toggleStar(event);
+const starBtn = $("starBtn");
+if ("PointerEvent" in window) {
+  starBtn.addEventListener("pointerup", toggleStar);
+} else {
+  starBtn.addEventListener("click", toggleStar);
+}
+starBtn.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    toggleStar();
+  }
 });
-$("starBtn").addEventListener("click", toggleStar);
 
 $("quitBtn").addEventListener("click", () => {
   showScreen("setup");
