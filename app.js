@@ -12,6 +12,7 @@ const $ = (id) => document.getElementById(id);
 const screens = { setup: $("screenSetup"), game: $("screenGame"), done: $("screenDone") };
 const LESSON_SIZE = 10;
 const STAR_STORAGE_KEY = "kanji-meaning-trainer-starred";
+const STAR_CLICK_GUARD_MS = 500;
 
 const state = {
   all: [],
@@ -39,6 +40,7 @@ const state = {
 };
 
 let deferredPrompt = null;
+let ignoreStarClickUntil = 0;
 window.addEventListener("beforeinstallprompt", (e) => {
   e.preventDefault();
   deferredPrompt = e;
@@ -166,7 +168,7 @@ function loadStarred(){
     if (!raw) return new Set();
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return new Set();
-    return new Set(parsed.map(Number));
+    return new Set(parsed.map(Number).filter(Number.isFinite));
   } catch {
     return new Set();
   }
@@ -181,7 +183,9 @@ function saveStarred(){
 }
 
 function isStarred(item){
-  return state.starred.has(item.id);
+  const id = Number(item?.id);
+  if (!Number.isFinite(id)) return false;
+  return state.starred.has(id);
 }
 
 function updateStarButton(){
@@ -198,10 +202,13 @@ function updateStarButton(){
   btn.title = starred ? "Unstar" : "Mark for review";
 }
 
-function toggleStar(){
+function toggleStar(event){
+  if (event?.type === "click" && Date.now() < ignoreStarClickUntil) return;
   if (!state.current) return;
-  if (isStarred(state.current)) state.starred.delete(state.current.id);
-  else state.starred.add(state.current.id);
+  const id = Number(state.current.id);
+  if (!Number.isFinite(id)) return;
+  if (isStarred(state.current)) state.starred.delete(id);
+  else state.starred.add(id);
   saveStarred();
   updateStarButton();
 }
@@ -239,7 +246,7 @@ function buildBank(){
   }
   const filtered = sliced.filter(x => (includeComp ? true : !x.compound));
   state.bank = state.practiceMode === "starred"
-    ? filtered.filter(x => state.starred.has(x.id))
+    ? filtered.filter(x => state.starred.has(Number(x.id)))
     : filtered;
   const lessonLabel = lessonValues.includes("all") ? "all lessons" : `lessons ${lessonValues.map(Number).sort((a, b) => a - b).join(", ")}`;
   const practiceLabel = state.practiceMode === "starred" ? "starred only" : "all items";
@@ -529,6 +536,10 @@ $("submitBtn").addEventListener("click", submit);
 $("showBtn").addEventListener("click", showAnswer);
 $("nextBtn").addEventListener("click", next);
 $("writeInput").addEventListener("keydown", (e) => { if (e.key === "Enter") submit(); });
+$("starBtn").addEventListener("pointerup", (event) => {
+  ignoreStarClickUntil = Date.now() + STAR_CLICK_GUARD_MS;
+  toggleStar(event);
+});
 $("starBtn").addEventListener("click", toggleStar);
 
 $("quitBtn").addEventListener("click", () => {
