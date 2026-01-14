@@ -1,10 +1,11 @@
-const CACHE_NAME = "kanji-meaning-trainer-v2.0.0";
+const VERSION = "2.0.1";
+const CACHE_NAME = `kanji-meaning-trainer-v${VERSION}`;
 const ASSETS = [
   "./",
   "./index.html",
-  "./styles.css",
-  "./app.js",
-  "./manifest.json",
+  `./styles.css?v=${VERSION}`,
+  `./app.js?v=${VERSION}`,
+  `./manifest.json?v=${VERSION}`,
   "./data/kanji.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",

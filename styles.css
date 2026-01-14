@@ -1,68 +1,68 @@
 :root{
-  --bg:#0b0f14;
-  --text:#e9eef6;
-  --muted:#9fb0c6;
-  --line:#203042;
-  --card-bg: rgba(12,18,28,.92);
+  --bg:#0b1022;
+  --text:#eef2fb;
+  --muted:#9aa7c0;
+  --line:#26324a;
+  --card-bg: rgba(17,24,44,.92);
   --card-border: rgba(255,255,255,.08);
-  --input-bg:#f3f4f6;
-  --input-text:#1b1f24;
-  --input-border:#d4d9e2;
+  --input-bg:#eef0f4;
+  --input-text:#1f2430;
+  --input-border:#cfd5df;
   --accent:#f3b272;
-  --shadow: 0 14px 34px rgba(0,0,0,.45);
-  --radius: 22px;
-  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --shadow: 0 18px 40px rgba(3,8,18,.55);
+  --radius: 24px;
+  --font: "SF Pro Display", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
   margin:0;
   font-family:var(--font);
-  background: radial-gradient(1200px 600px at 20% -10%, rgba(255,190,120,.18), transparent 60%),
-              radial-gradient(900px 500px at 90% 10%, rgba(122,167,255,.16), transparent 55%),
+  background: radial-gradient(1200px 600px at 15% -10%, rgba(140,170,255,.14), transparent 55%),
+              radial-gradient(800px 520px at 95% 5%, rgba(255,205,150,.12), transparent 60%),
               var(--bg);
   color:var(--text);
 }
-.topbar{display:flex; justify-content:space-between; align-items:center; padding:20px 18px 12px; max-width:980px; margin:0 auto;}
+.topbar{display:flex; justify-content:space-between; align-items:center; padding:24px 20px 14px; max-width:980px; margin:0 auto;}
 .brand{display:flex; gap:12px; align-items:center;}
 .logo{
-  width:44px; height:44px; border-radius:14px;
+  width:46px; height:46px; border-radius:14px;
   display:grid; place-items:center;
-  background: linear-gradient(135deg, rgba(255,190,120,.3), rgba(122,167,255,.22));
-  border:1px solid rgba(255,190,120,.3);
-  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+  background: linear-gradient(135deg, rgba(255,190,120,.3), rgba(122,167,255,.26));
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow: 0 12px 26px rgba(0,0,0,.35);
   font-weight:900;
 }
-.title{font-weight:900; letter-spacing:.2px}
-.sub{color:var(--muted); font-size:12px; margin-top:2px}
+.title{font-weight:900; letter-spacing:.2px; font-size:20px}
+.sub{color:var(--muted); font-size:13px; margin-top:2px}
 .wrap{max-width:980px; margin:0 auto; padding:0 18px 28px; display:grid; gap:16px;}
 .card{
-  background: linear-gradient(180deg, rgba(24,32,46,.96), rgba(12,18,28,.92));
+  background: linear-gradient(180deg, rgba(24,32,54,.96), rgba(16,22,40,.92));
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 22px;
   box-shadow: var(--shadow);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
 }
-h1{margin:0 0 16px 0; font-size:24px; letter-spacing:.3px}
+h1{margin:0 0 16px 0; font-size:26px; letter-spacing:.3px}
 hr.sep{border:none; border-top:1px solid var(--line); margin:14px 0}
 .grid2{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:12px;}
 @media (max-width:680px){.grid2{grid-template-columns:1fr}}
-.field label{display:block; font-size:12px; color:var(--muted); margin-bottom:6px}
+.field label{display:block; font-size:13px; color:var(--muted); margin-bottom:8px}
 .field select, .input{
-  width:100%; padding:12px 14px; border-radius:16px;
+  width:100%; padding:14px 16px; border-radius:18px;
   border:1px solid var(--input-border);
   background: var(--input-bg);
   color: var(--input-text); outline:none;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.06);
 }
 .field select[multiple]{
   min-height: 130px;
   padding:10px 12px;
 }
 .field select:focus, .input:focus{
-  border-color: rgba(243,178,114,.7);
-  box-shadow:0 0 0 4px rgba(243,178,114,.2);
+  border-color: rgba(120,162,255,.65);
+  box-shadow:0 0 0 4px rgba(120,162,255,.2);
 }
 input[type="range"]{width:100%}
 .hint{color:var(--muted); font-size:12px; margin-top:6px}
