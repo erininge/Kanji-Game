@@ -1,4 +1,4 @@
-const CACHE_NAME = "kanji-meaning-trainer-v1.0.5";
+const CACHE_NAME = "kanji-meaning-trainer-v2.0.0";
 const ASSETS = [
   "./",
   "./index.html",
