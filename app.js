@@ -11,6 +11,7 @@ const $ = (id) => document.getElementById(id);
 
 const screens = { setup: $("screenSetup"), game: $("screenGame"), done: $("screenDone") };
 const LESSON_SIZE = 10;
+const STAR_STORAGE_KEY = "kanji-meaning-trainer-starred";
 
 const state = {
   all: [],
@@ -21,12 +22,14 @@ const state = {
   wrongAttempts: 0,
 
   level: "N3",
-  lesson: "all",
+  lessons: ["all"],
   compounds: "off",
   directionSetting: "mixed", // k-en | en-k | mixed
   modeSetting: "mixed",      // mc | write | mixed
   shuffle: "on",
   count: 10,
+  practiceMode: "all",
+  starred: new Set(),
 
   current: null,
   currentDirection: null,
@@ -110,7 +113,7 @@ function getLessonCount(level){
 
 function updateLessonOptions(){
   const lessonSelect = $("lesson");
-  const previous = lessonSelect.value;
+  const previous = state.lessons.length ? state.lessons : getSelectedLessonValues();
   const count = getLessonCount($("level").value);
   lessonSelect.innerHTML = "";
 
@@ -126,35 +129,117 @@ function updateLessonOptions(){
     lessonSelect.appendChild(option);
   }
 
-  if (previous && [...lessonSelect.options].some(option => option.value === previous)){
-    lessonSelect.value = previous;
-  } else {
-    lessonSelect.value = "all";
+  const available = new Set([...lessonSelect.options].map(option => option.value));
+  const filtered = previous.filter(value => available.has(value));
+  setLessonSelections(filtered.length ? filtered : ["all"]);
+}
+
+function getSelectedLessonValues(){
+  return [...$("lesson").selectedOptions].map(option => option.value);
+}
+
+function normalizeLessonSelection(values){
+  const unique = [...new Set(values)];
+  if (unique.includes("all") || unique.length === 0) return ["all"];
+  return unique;
+}
+
+function setLessonSelections(values){
+  const normalized = normalizeLessonSelection(values);
+  const select = $("lesson");
+  [...select.options].forEach(option => {
+    option.selected = normalized.includes(option.value);
+  });
+  state.lessons = normalized;
+}
+
+function lessonLabelText(){
+  if (state.lessons.includes("all")) return "All lessons";
+  const numbers = state.lessons.map(Number).sort((a, b) => a - b);
+  if (numbers.length === 1) return `Lesson ${numbers[0]}`;
+  return `Lessons ${numbers.join(", ")}`;
+}
+
+function loadStarred(){
+  try {
+    const raw = localStorage.getItem(STAR_STORAGE_KEY);
+    if (!raw) return new Set();
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return new Set();
+    return new Set(parsed.map(Number));
+  } catch {
+    return new Set();
   }
+}
+
+function saveStarred(){
+  localStorage.setItem(STAR_STORAGE_KEY, JSON.stringify([...state.starred]));
+}
+
+function isStarred(item){
+  return state.starred.has(item.id);
+}
+
+function updateStarButton(){
+  const btn = $("starBtn");
+  if (!state.current){
+    btn.hidden = true;
+    return;
+  }
+  const starred = isStarred(state.current);
+  btn.hidden = false;
+  btn.classList.toggle("starred", starred);
+  btn.setAttribute("aria-pressed", starred);
+  btn.textContent = starred ? "★" : "☆";
+  btn.title = starred ? "Unstar" : "Mark for review";
+}
+
+function toggleStar(){
+  if (!state.current) return;
+  if (isStarred(state.current)) state.starred.delete(state.current.id);
+  else state.starred.add(state.current.id);
+  saveStarred();
+  updateStarButton();
+}
+
+function setSetupMessage(message){
+  const el = $("setupMessage");
+  if (!message){
+    el.hidden = true;
+    el.textContent = "";
+    return;
+  }
+  el.hidden = false;
+  el.textContent = message;
 }
 
 function setMetaPill(){
-  const lesson = state.lesson === "all" ? "All lessons" : `Lesson ${state.lesson}`;
+  const lesson = lessonLabelText();
   const lvl = `${state.level} ${lesson}${state.compounds === "on" ? " +comp" : ""}`;
   const d = state.directionSetting === "mixed" ? "Mixed dir" : (state.directionSetting === "k-en" ? "K→EN" : "EN→K");
   const m = state.modeSetting === "mixed" ? "Mixed mode" : (state.modeSetting === "mc" ? "MC" : "Written");
-  $("metaPill").textContent = `${lvl} • ${d} • ${m}`;
+  const p = state.practiceMode === "starred" ? "Starred" : "All";
+  $("metaPill").textContent = `${lvl} • ${d} • ${m} • ${p}`;
 }
 
 function buildBank(){
+  setSetupMessage("");
   const lvl = state.level;
   const includeComp = state.compounds === "on";
-  const lessonValue = state.lesson;
+  const lessonValues = state.lessons;
   const items = getLevelItems(lvl);
   let sliced = items;
-  if (lessonValue !== "all"){
-    const lessonIndex = parseInt(lessonValue, 10);
-    const start = (lessonIndex - 1) * LESSON_SIZE;
-    sliced = items.slice(start, start + LESSON_SIZE);
+  if (!lessonValues.includes("all")){
+    const lessonSet = new Set(lessonValues.map(Number));
+    sliced = items.filter((item, index) => lessonSet.has(Math.floor(index / LESSON_SIZE) + 1));
   }
-  state.bank = sliced.filter(x => (includeComp ? true : !x.compound));
-  const lessonLabel = lessonValue === "all" ? "all lessons" : `lesson ${lessonValue}`;
-  $("bankInfo").textContent = `Bank size: ${state.bank.length} item(s) in ${lvl} ${lessonLabel}${includeComp ? " (including compounds)" : ""}.`;
+  const filtered = sliced.filter(x => (includeComp ? true : !x.compound));
+  state.bank = state.practiceMode === "starred"
+    ? filtered.filter(x => state.starred.has(x.id))
+    : filtered;
+  const lessonLabel = lessonValues.includes("all") ? "all lessons" : `lessons ${lessonValues.map(Number).sort((a, b) => a - b).join(", ")}`;
+  const practiceLabel = state.practiceMode === "starred" ? "starred only" : "all items";
+  $("bankInfo").textContent = `Bank size: ${state.bank.length} item(s) in ${lvl} ${lessonLabel}${includeComp ? " (including compounds)" : ""} • ${practiceLabel}. Starred total: ${state.starred.size}.`;
 }
 
 function resetQuestionUI(){
@@ -246,6 +331,7 @@ function renderQuestion(){
   $("progressPill").textContent = `Q ${state.idx + 1} / ${state.session.length}`;
   $("promptLabel").textContent = promptLabel();
   $("questionText").textContent = promptText();
+  updateStarButton();
 
   if (state.currentMode === "mc") renderMC();
   else renderWritten();
@@ -355,8 +441,13 @@ function finish(){
 }
 
 function startSession({count, shuffle}){
+  setSetupMessage("");
+  if (state.practiceMode === "starred" && state.bank.length === 0){
+    setSetupMessage("No starred items yet. Tap ☆ on a card to mark it for review, then try Starred only again.");
+    return;
+  }
   if (state.bank.length < 4){
-    setFeedback(false, "Not enough items in this bank (need at least 4). Try enabling compounds or choosing another level.");
+    setSetupMessage("Not enough items in this bank (need at least 4). Try enabling compounds or choosing another level.");
     return;
   }
 
@@ -383,26 +474,31 @@ $("count").addEventListener("input", () => $("countLabel").textContent = $("coun
 $("aboutBtn").addEventListener("click", () => $("about").hidden = !$("about").hidden);
 $("level").addEventListener("change", () => {
   updateLessonOptions();
-  state.lesson = $("lesson").value;
+  setLessonSelections(getSelectedLessonValues());
   state.level = $("level").value;
   buildBank();
 });
 $("lesson").addEventListener("change", () => {
-  state.lesson = $("lesson").value;
+  setLessonSelections(getSelectedLessonValues());
   buildBank();
 });
 $("compounds").addEventListener("change", () => {
   state.compounds = $("compounds").value;
   buildBank();
 });
+$("practiceMode").addEventListener("change", () => {
+  state.practiceMode = $("practiceMode").value;
+  buildBank();
+});
 
 $("startBtn").addEventListener("click", () => {
   state.level = $("level").value;
-  state.lesson = $("lesson").value;
+  setLessonSelections(getSelectedLessonValues());
   state.compounds = $("compounds").value;
   state.directionSetting = $("direction").value;
   state.modeSetting = $("mode").value;
   state.shuffle = $("shuffle").value;
+  state.practiceMode = $("practiceMode").value;
 
   buildBank();
   startSession({count: parseInt($("count").value, 10), shuffle: state.shuffle});
@@ -411,11 +507,12 @@ $("startBtn").addEventListener("click", () => {
 $("practiceBtn").addEventListener("click", () => {
   // quick 5 uses current dropdown values
   state.level = $("level").value;
-  state.lesson = $("lesson").value;
+  setLessonSelections(getSelectedLessonValues());
   state.compounds = $("compounds").value;
   state.directionSetting = $("direction").value;
   state.modeSetting = $("mode").value;
   state.shuffle = "on";
+  state.practiceMode = $("practiceMode").value;
 
   $("count").value = "5";
   $("countLabel").textContent = "5";
@@ -428,10 +525,17 @@ $("submitBtn").addEventListener("click", submit);
 $("showBtn").addEventListener("click", showAnswer);
 $("nextBtn").addEventListener("click", next);
 $("writeInput").addEventListener("keydown", (e) => { if (e.key === "Enter") submit(); });
+$("starBtn").addEventListener("click", toggleStar);
 
-$("quitBtn").addEventListener("click", () => showScreen("setup"));
+$("quitBtn").addEventListener("click", () => {
+  showScreen("setup");
+  buildBank();
+});
 $("restartBtn").addEventListener("click", () => startSession({count: state.count, shuffle: state.shuffle}));
-$("backBtn").addEventListener("click", () => showScreen("setup"));
+$("backBtn").addEventListener("click", () => {
+  showScreen("setup");
+  buildBank();
+});
 
 async function init(){
   if ("serviceWorker" in navigator){
@@ -439,6 +543,7 @@ async function init(){
   }
   const res = await fetch("data/kanji.json", {cache: "no-store"});
   state.all = await res.json();
+  state.starred = loadStarred();
   updateLessonOptions();
   $("countLabel").textContent = $("count").value;
   buildBank();

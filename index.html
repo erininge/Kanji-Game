@@ -16,7 +16,7 @@
       <div class="logo">漢</div>
       <div>
         <div class="title">Kanji Meaning Trainer</div>
-        <div class="sub">Meanings only • No readings • PWA • v1.0.1</div>
+        <div class="sub">Meanings only • No readings • PWA • v1.0.2</div>
       </div>
     </div>
     <button id="installBtn" class="btn ghost" hidden>Install</button>
@@ -39,10 +39,11 @@
         </div>
 
         <div class="field">
-          <label for="lesson">Lesson</label>
-          <select id="lesson">
+          <label for="lesson">Lessons</label>
+          <select id="lesson" multiple>
             <option value="all" selected>All lessons</option>
           </select>
+          <div class="hint">Select one or more (Ctrl/⌘ for multi-select).</div>
         </div>
 
         <div class="field">
@@ -84,6 +85,14 @@
             <option value="off">In order</option>
           </select>
         </div>
+
+        <div class="field">
+          <label for="practiceMode">Practice mode</label>
+          <select id="practiceMode">
+            <option value="all" selected>All items</option>
+            <option value="starred">Starred only</option>
+          </select>
+        </div>
       </div>
 
       <div class="row">
@@ -95,14 +104,16 @@
       <div id="about" class="callout" hidden>
         <p>
           • Meanings only — <b>no readings</b><br/>
-          • Pick JLPT level, <b>lesson</b>, and optionally include <b>compounds</b> (two+ kanji)<br/>
+          • Pick JLPT level, <b>lesson(s)</b>, and optionally include <b>compounds</b> (two+ kanji)<br/>
           • Direction: Kanji→English / English→Kanji / Mixed<br/>
           • Multiple choice or Written (or Mixed)<br/>
+          • ⭐️ Star any card and use <b>Starred only</b> to review later<br/>
           • <b>Never auto-advances</b> — you must tap <b>Next</b>
         </p>
       </div>
 
       <div class="tiny muted" id="bankInfo"></div>
+      <div id="setupMessage" class="callout" hidden></div>
     </section>
 
     <section id="screenGame" class="card" hidden>
@@ -112,8 +123,13 @@
       </div>
 
       <div class="prompt">
-        <div class="label" id="promptLabel">Meaning</div>
-        <div class="qtext" id="questionText">Loading…</div>
+        <div class="promptHeader">
+          <div>
+            <div class="label" id="promptLabel">Meaning</div>
+            <div class="qtext" id="questionText">Loading…</div>
+          </div>
+          <button id="starBtn" class="star-btn" type="button" aria-pressed="false" title="Mark for review">☆</button>
+        </div>
       </div>
 
       <div id="mcArea" hidden>

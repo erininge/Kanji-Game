@@ -48,6 +48,10 @@ hr.sep{border:none; border-top:1px solid var(--line); margin:14px 0}
   background: rgba(10,16,24,.65);
   color: var(--text); outline:none;
 }
+.field select[multiple]{
+  min-height: 130px;
+  padding:10px 12px;
+}
 .field select:focus, .input:focus{border-color: rgba(255,190,120,.6); box-shadow:0 0 0 4px rgba(255,190,120,.14)}
 input[type="range"]{width:100%}
 .hint{color:var(--muted); font-size:12px; margin-top:6px}
@@ -80,8 +84,32 @@ input[type="range"]{width:100%}
   border:1px solid rgba(255,255,255,.08);
   background: rgba(10,16,24,.35);
 }
+.promptHeader{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+}
 .label{font-size:12px; color:var(--muted); margin-bottom:8px}
 .qtext{font-size:22px; font-weight:900; line-height:1.25}
+.star-btn{
+  border:1px solid rgba(255,255,255,.15);
+  background: rgba(10,16,24,.35);
+  color: var(--muted);
+  border-radius:12px;
+  font-size:22px;
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+}
+.star-btn:hover{border-color: rgba(255,190,120,.45); color: rgba(255,190,120,.9)}
+.star-btn.starred{
+  color: rgba(255,190,120,.95);
+  border-color: rgba(255,190,120,.6);
+  box-shadow:0 0 0 4px rgba(255,190,120,.12);
+}
 .choices{display:grid; grid-template-columns:1fr; gap:10px; margin-top:12px}
 .choice{
   text-align:left; padding:12px; border-radius:16px;
