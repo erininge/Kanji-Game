@@ -102,7 +102,7 @@ input[type="range"]{width:100%}
   gap:12px;
 }
 .label{font-size:12px; color:var(--muted); margin-bottom:8px}
-.qtext{font-size:22px; font-weight:900; line-height:1.25}
+.qtext{font-size:clamp(28px, 4vw, 36px); font-weight:900; line-height:1.2}
 .star-btn{
   border:1px solid rgba(255,255,255,.15);
   background: rgba(10,16,24,.35);
@@ -126,7 +126,7 @@ input[type="range"]{width:100%}
   text-align:left; padding:12px 14px; border-radius:16px;
   border:1px solid rgba(255,255,255,.08);
   background: rgba(10,16,24,.35);
-  cursor:pointer; font-weight:900;
+  cursor:pointer; font-weight:900; font-size:clamp(18px, 2.6vw, 22px);
 }
 .choice:hover{border-color: rgba(243,178,114,.35)}
 .choice.selected{border-color: rgba(243,178,114,.8); box-shadow:0 0 0 4px rgba(243,178,114,.12)}
