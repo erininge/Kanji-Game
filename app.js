@@ -10,6 +10,7 @@
 const $ = (id) => document.getElementById(id);
 
 const screens = { setup: $("screenSetup"), game: $("screenGame"), done: $("screenDone") };
+const LESSON_SIZE = 10;
 
 const state = {
   all: [],
@@ -20,6 +21,7 @@ const state = {
   wrongAttempts: 0,
 
   level: "N3",
+  lesson: "all",
   compounds: "off",
   directionSetting: "mixed", // k-en | en-k | mixed
   modeSetting: "mixed",      // mc | write | mixed
@@ -94,8 +96,46 @@ function pickMode(){
   return state.modeSetting;
 }
 
+function getLevelItems(level){
+  return state.all
+    .filter(item => item.level === level)
+    .slice()
+    .sort((a, b) => a.id - b.id);
+}
+
+function getLessonCount(level){
+  const total = getLevelItems(level).length;
+  return Math.max(1, Math.ceil(total / LESSON_SIZE));
+}
+
+function updateLessonOptions(){
+  const lessonSelect = $("lesson");
+  const previous = lessonSelect.value;
+  const count = getLessonCount($("level").value);
+  lessonSelect.innerHTML = "";
+
+  const allOption = document.createElement("option");
+  allOption.value = "all";
+  allOption.textContent = "All lessons";
+  lessonSelect.appendChild(allOption);
+
+  for (let i = 1; i <= count; i += 1){
+    const option = document.createElement("option");
+    option.value = String(i);
+    option.textContent = `Lesson ${i}`;
+    lessonSelect.appendChild(option);
+  }
+
+  if (previous && [...lessonSelect.options].some(option => option.value === previous)){
+    lessonSelect.value = previous;
+  } else {
+    lessonSelect.value = "all";
+  }
+}
+
 function setMetaPill(){
-  const lvl = state.level + (state.compounds === "on" ? " +comp" : "");
+  const lesson = state.lesson === "all" ? "All lessons" : `Lesson ${state.lesson}`;
+  const lvl = `${state.level} ${lesson}${state.compounds === "on" ? " +comp" : ""}`;
   const d = state.directionSetting === "mixed" ? "Mixed dir" : (state.directionSetting === "k-en" ? "K→EN" : "EN→K");
   const m = state.modeSetting === "mixed" ? "Mixed mode" : (state.modeSetting === "mc" ? "MC" : "Written");
   $("metaPill").textContent = `${lvl} • ${d} • ${m}`;
@@ -104,8 +144,17 @@ function setMetaPill(){
 function buildBank(){
   const lvl = state.level;
   const includeComp = state.compounds === "on";
-  state.bank = state.all.filter(x => x.level === lvl && (includeComp ? true : !x.compound));
-  $("bankInfo").textContent = `Bank size: ${state.bank.length} item(s) in ${lvl}${includeComp ? " (including compounds)" : ""}.`;
+  const lessonValue = state.lesson;
+  const items = getLevelItems(lvl);
+  let sliced = items;
+  if (lessonValue !== "all"){
+    const lessonIndex = parseInt(lessonValue, 10);
+    const start = (lessonIndex - 1) * LESSON_SIZE;
+    sliced = items.slice(start, start + LESSON_SIZE);
+  }
+  state.bank = sliced.filter(x => (includeComp ? true : !x.compound));
+  const lessonLabel = lessonValue === "all" ? "all lessons" : `lesson ${lessonValue}`;
+  $("bankInfo").textContent = `Bank size: ${state.bank.length} item(s) in ${lvl} ${lessonLabel}${includeComp ? " (including compounds)" : ""}.`;
 }
 
 function resetQuestionUI(){
@@ -332,9 +381,24 @@ function startSession({count, shuffle}){
 // UI wiring
 $("count").addEventListener("input", () => $("countLabel").textContent = $("count").value);
 $("aboutBtn").addEventListener("click", () => $("about").hidden = !$("about").hidden);
+$("level").addEventListener("change", () => {
+  updateLessonOptions();
+  state.lesson = $("lesson").value;
+  state.level = $("level").value;
+  buildBank();
+});
+$("lesson").addEventListener("change", () => {
+  state.lesson = $("lesson").value;
+  buildBank();
+});
+$("compounds").addEventListener("change", () => {
+  state.compounds = $("compounds").value;
+  buildBank();
+});
 
 $("startBtn").addEventListener("click", () => {
   state.level = $("level").value;
+  state.lesson = $("lesson").value;
   state.compounds = $("compounds").value;
   state.directionSetting = $("direction").value;
   state.modeSetting = $("mode").value;
@@ -347,6 +411,7 @@ $("startBtn").addEventListener("click", () => {
 $("practiceBtn").addEventListener("click", () => {
   // quick 5 uses current dropdown values
   state.level = $("level").value;
+  state.lesson = $("lesson").value;
   state.compounds = $("compounds").value;
   state.directionSetting = $("direction").value;
   state.modeSetting = $("mode").value;
@@ -374,6 +439,7 @@ async function init(){
   }
   const res = await fetch("data/kanji.json", {cache: "no-store"});
   state.all = await res.json();
+  updateLessonOptions();
   $("countLabel").textContent = $("count").value;
   buildBank();
   showScreen("setup");

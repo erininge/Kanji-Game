@@ -16,7 +16,7 @@
       <div class="logo">漢</div>
       <div>
         <div class="title">Kanji Meaning Trainer</div>
-        <div class="sub">Meanings only • No readings • PWA • v1.0.0</div>
+        <div class="sub">Meanings only • No readings • PWA • v1.0.1</div>
       </div>
     </div>
     <button id="installBtn" class="btn ghost" hidden>Install</button>
@@ -35,6 +35,13 @@
             <option value="N3" selected>N3</option>
             <option value="N2">N2</option>
             <option value="N1">N1</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="lesson">Lesson</label>
+          <select id="lesson">
+            <option value="all" selected>All lessons</option>
           </select>
         </div>
 
@@ -88,7 +95,7 @@
       <div id="about" class="callout" hidden>
         <p>
           • Meanings only — <b>no readings</b><br/>
-          • Pick JLPT level and optionally include <b>compounds</b> (two+ kanji)<br/>
+          • Pick JLPT level, <b>lesson</b>, and optionally include <b>compounds</b> (two+ kanji)<br/>
           • Direction: Kanji→English / English→Kanji / Mixed<br/>
           • Multiple choice or Written (or Mixed)<br/>
           • <b>Never auto-advances</b> — you must tap <b>Next</b>
