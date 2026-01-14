@@ -173,7 +173,11 @@ function loadStarred(){
 }
 
 function saveStarred(){
-  localStorage.setItem(STAR_STORAGE_KEY, JSON.stringify([...state.starred]));
+  try {
+    localStorage.setItem(STAR_STORAGE_KEY, JSON.stringify([...state.starred]));
+  } catch (error) {
+    console.warn("Unable to persist starred items.", error);
+  }
 }
 
 function isStarred(item){
