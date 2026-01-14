@@ -547,7 +547,7 @@ $("backBtn").addEventListener("click", () => {
 
 async function init(){
   if ("serviceWorker" in navigator){
-    try { await navigator.serviceWorker.register("sw.js"); } catch {}
+    try { await navigator.serviceWorker.register("sw.js?v=2.0.0"); } catch {}
   }
   const res = await fetch("data/kanji.json", {cache: "no-store"});
   state.all = await res.json();
